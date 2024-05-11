@@ -104,8 +104,9 @@
     <h1 class="main-index__title">Подбор программы</h1>
     <section class="application">
       <div class="application__wrapper">
-        <p class="programs__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
-        <form class="programs__form form" action="https://echo.htmlacademy.ru/courses" method="post">
+        <h2 class="visually-hidden">Форма для выбора параметров программы</h2>
+        <p class="application__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+        <form class="application__form form" action="https://echo.htmlacademy.ru/courses" method="post">
           <fieldset class="form__group">
             <legend class="visually-hidden">Данные питомца</legend>
             <p class="form__item field">
@@ -161,15 +162,12 @@
                 placeholder="8 (960) 900-60-90">
             </p>
           </fieldset>
-          <fieldset class="form__group">
-            <legend class="form__title">Комментарий</legend>
-            <p class="form__item field">
-              <label class="visually-hidden" for="application-comment">Поле для комментария</label>
-              <textarea class="field__input" type="text" name="application-comment" id="application-comment">
+          <div class="form__group field--comment">
+            <label class="field__label" for="application-comment">Комментарий</label>
+            <textarea class="field__input" name="application-comment" id="application-comment" rows="">
                 Расскажите обо всех повадках кота
               </textarea>
-            </p>
-          </fieldset>
+          </div>
           <fieldset class="form__group">
             <legend class="form__title">Дополнительно</legend>
             <ul class="form__list">
@@ -193,7 +191,8 @@
                   <span class="control__mark"></span>
                   <span class="control__label">молоко</span>
                 </label>
-              </li><li class="form__item">
+              </li>
+              <li class="form__item">
                 <label class="control">
                   <input class="control__input" type="checkbox" name="vitamin">
                   <span class="control__mark"></span>
