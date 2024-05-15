@@ -1,0 +1,19 @@
+.field__label {
+  font-family: $font-title;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $special_dark_grey;
+}
+
+.field__input {
+  border: 1px #E7E7E7 solid;
+  font-family: $font-title;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $special_dark_grey;
+}
+
+.field__input--comment {
+  inline-size: 100%;
+  text-align: left;
+}

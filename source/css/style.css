@@ -82,8 +82,13 @@ img {
   text-decoration: none;
 }
 
-.main-index__title {
+.main-index {
+  inline-size: 320px;
   margin-inline: auto;
+}
+
+.main-index__title {
+  padding-inline: 20px;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 1;
@@ -380,4 +385,65 @@ img {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+}
+
+.application__wrapper {
+  inline-size: 320px;
+  margin-inline: auto;
+  padding: 20px;
+}
+
+.application__text {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.form__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form__add {
+  text-align: center;
+  line-height: 16px;
+}
+
+.field__label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.field__input {
+  border: 1px #E7E7E7 solid;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.field__input--comment {
+  inline-size: 100%;
+  text-align: left;
+}
+
+.control__label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #222222;
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,10 @@
-.main-index__title {
+.main-index {
+  inline-size: 320px;
   margin-inline: auto;
+}
+
+.main-index__title {
+  padding-inline: 20px;
   font-family: $font-title;
   font-size: 36px;
   line-height: 1;
