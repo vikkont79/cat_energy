@@ -82,6 +82,14 @@ img {
   text-decoration: none;
 }
 
+.main-index__title {
+  margin-inline: auto;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+}
+
 .promo {
   background-color: #68B738;
   background-image: url("../../img/promo.jpg");
@@ -267,4 +275,109 @@ img {
   font-size: 16px;
   text-decoration: none;
   color: #444444;
+}
+
+.main-catalog__wrapper {
+  inline-size: 320px;
+  margin-inline: auto;
+  padding: 20px;
+}
+
+.main-catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.product__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.product__list {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.product__button--show-more {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: #F2F2F2;
+  color: #444444;
+}
+
+.show-more {
+  text-align: center;
+}
+
+.show-more__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.show-more__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.add-catalog__wrapper {
+  inline-size: 320px;
+  margin-inline: auto;
+  padding: 20px;
+}
+
+.add-catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.add-catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.add-product__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.add-product__list {
+  line-height: 1;
+  color: #444444;
+}
+
+.gift {
+  background-color: #68B738;
+  background-image: url("../../img/catbag.jpg");
+}
+
+.gift__text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
