@@ -60,8 +60,6 @@ img {
 }
 
 .page-header__nav {
-  inline-size: 320px;
-  margin-inline: auto;
   padding-inline: 20px;
 }
 
@@ -82,11 +80,6 @@ img {
   text-decoration: none;
 }
 
-.main-index {
-  inline-size: 320px;
-  margin-inline: auto;
-}
-
 .main-index__title {
   padding-inline: 20px;
   font-family: "Oswald", sans-serif;
@@ -103,8 +96,6 @@ img {
 }
 
 .promo__wrapper {
-  inline-size: 320px;
-  margin-inline: auto;
   padding: 20px;
   text-align: center;
   color: #FFFFFF;
@@ -123,8 +114,6 @@ img {
 }
 
 .programs__wrapper {
-  inline-size: 320px;
-  margin-inline: auto;
   padding: 20px;
 }
 
@@ -163,8 +152,6 @@ img {
 }
 
 .features__wrapper {
-  inline-size: 320px;
-  margin-inline: auto;
   padding: 20px;
 }
 
@@ -187,8 +174,6 @@ img {
 }
 
 .example__wrapper {
-  inline-size: 320px;
-  margin-inline: auto;
   padding: 20px;
 }
 
@@ -235,11 +220,6 @@ img {
   text-transform: uppercase;
 }
 
-.contacts__wrapper {
-  inline-size: 320px;
-  margin-inline: auto;
-}
-
 .contacts__adress {
   padding-inline: 20px;
   padding-block: 26px;
@@ -265,8 +245,6 @@ img {
 }
 
 .page-footer__wrapper {
-  inline-size: 320px;
-  margin-inline: auto;
   padding: 20px;
 }
 
@@ -283,8 +261,6 @@ img {
 }
 
 .main-catalog__wrapper {
-  inline-size: 320px;
-  margin-inline: auto;
   padding: 20px;
 }
 
@@ -343,8 +319,6 @@ img {
 }
 
 .add-catalog__wrapper {
-  inline-size: 320px;
-  margin-inline: auto;
   padding: 20px;
 }
 
@@ -388,8 +362,6 @@ img {
 }
 
 .application__wrapper {
-  inline-size: 320px;
-  margin-inline: auto;
   padding: 20px;
 }
 
