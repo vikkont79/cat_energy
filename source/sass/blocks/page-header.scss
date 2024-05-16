@@ -1,3 +1,35 @@
-.page-header__nav {
+.page-header {
   padding-inline: 20px;
+  @media (min-width: $tablet-width) {
+    padding-inline: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-inline: 110px;
+  }
+}
+.page-header__nav {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: $tablet-width) {
+    inline-size: 174px;
+  }
+  @media (min-width: $desktop-width) {
+    inline-size: 202px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__toggle {
+    display: none;
+  }
 }
