@@ -110,7 +110,7 @@
         <h2 class="visually-hidden">Форма для выбора параметров программы</h2>
         <p class="application__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
         <form class="application__form form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <fieldset class="form__group">
+          <fieldset class="form__group fofm__group--pet">
             <legend class="visually-hidden">Данные питомца</legend>
             <p class="form__item field">
               <label class="field__label" for="application-name">ИМЯ:*</label>
@@ -126,7 +126,7 @@
               <input class="field__input" type="text" name="application-agee" id="application-age" placeholder="7">
             </p>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--program">
             <legend class="visually-hidden">Выбор программы</legend>
             <ul class="form__list">
               <li class="form__item">
@@ -152,7 +152,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--contacts">
             <legend class="form__title">Контактные данные (владельца кота)</legend>
             <p class="form__item field">
               <label class="field__label" for="application-email">E-mail:*</label>
@@ -165,7 +165,7 @@
                 placeholder="8 (960) 900-60-90">
             </p>
           </fieldset>
-          <div class="form__group">
+          <div class="form__group form__group--comment">
             <label class="form__title" for="application-comment">Комментарий</label>
             <div class="field">
               <textarea class="field__input field__input--comment" name="application-comment" id="application-comment" rows="5">
@@ -173,7 +173,7 @@
               </textarea>
             </div>
           </div>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--more">
             <legend class="form__title">Дополнительно</legend>
             <ul class="form__list">
               <li class="form__item">
