@@ -1,7 +1,14 @@
 .form__group {
   margin: 0;
   padding: 0;
-  border: none;
+  border: none;  
+}
+
+@media (min-width: $desktop-width) {
+  .form__group:last-of-type .form__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__title {

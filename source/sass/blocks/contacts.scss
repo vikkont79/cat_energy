@@ -37,6 +37,11 @@
   color: #111111;
 }
 
+.contacts__adress-block {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__text {
   line-height: 20px;
   font-style: normal;
