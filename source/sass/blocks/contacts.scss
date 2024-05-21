@@ -1,21 +1,14 @@
-.contacts__wrapper {
+.contacts {
   position: relative;
-  @media (min-width: $tablet-width) {
-    inline-size: 768px;       
-    margin-inline: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    inline-size: 1440px;    
-  }
+  
 }
-.contacts__adress {
+.contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-inline: 20px;
+  
 
   @media (min-width: $tablet-width) {
-    padding-inline: 70px;
+    padding-inline: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,7 +16,8 @@
     top: 95px;
     left: 110px;
     inline-size: 565px;
-    z-index: 2;
+    padding-inline: 80px;
+    z-index: 1;
     background-color: $white;
   }
 }
@@ -37,7 +31,7 @@
   color: #111111;
 }
 
-.contacts__adress-block {
+.contacts__adress {
   display: flex;
   flex-direction: column;
 }

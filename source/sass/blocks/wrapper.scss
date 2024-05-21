@@ -1,0 +1,12 @@
+.wrapper {
+  inline-size: 280px;
+  margin-inline: auto;
+
+  @media (min-width: $tablet-width) {
+    inline-size: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    inline-size: 1220px;
+  }
+}
