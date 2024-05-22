@@ -29,6 +29,11 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__adress {
@@ -40,6 +45,12 @@
   line-height: 20px;
   font-style: normal;
   color: $special_dark_grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
 }
 
 .contacts__map {

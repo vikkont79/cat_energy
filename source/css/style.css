@@ -47,6 +47,7 @@ img {
 }
 
 .page {
+  block-size: 100%;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -201,6 +202,14 @@ img {
     background-image: none;
   }
 }
+@media (min-width: 1440px) {
+  .promo {
+    background-image: url("../../img/promo.jpg");
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    background-size: 696px auto;
+  }
+}
 
 @media (min-width: 768px) {
   .promo__wrapper {
@@ -212,10 +221,6 @@ img {
   .promo__wrapper {
     -webkit-padding-start: 80px;
             padding-inline-start: 80px;
-    background-image: url("../../img/promo.jpg");
-    background-repeat: no-repeat;
-    background-position: top 0 right 0;
-    background-size: 696px auto;
   }
 }
 
@@ -233,7 +238,6 @@ img {
 }
 
 .promo__slogan {
-  font-size: 14px;
   line-height: 1;
 }
 @media (min-width: 768px) {
@@ -275,6 +279,14 @@ img {
 .programs__item {
   background-color: #F2F2F2;
   border: 0px #D9D9D9 solid;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+@media (min-width: 768px) {
+  .programs__item {
+    -webkit-padding-start: 52px;
+            padding-inline-start: 52px;
+  }
 }
 @media (min-width: 1440px) {
   .programs__item {
@@ -356,14 +368,26 @@ img {
 }
 @media (min-width: 1440px) {
   .features__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .features__item {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 .example {
   background-color: #EAEAEA;
+}
+
+@media (min-width: 1440px) {
+  .example__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -524,6 +548,12 @@ img {
   text-transform: uppercase;
   color: #111111;
 }
+@media (min-width: 768px) {
+  .contacts__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 
 .contacts__adress {
   display: flex;
@@ -534,6 +564,12 @@ img {
   line-height: 20px;
   font-style: normal;
   color: #444444;
+}
+@media (min-width: 768px) {
+  .contacts__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .contacts__map {
@@ -585,6 +621,9 @@ img {
 }
 
 .page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   text-decoration: none;
   color: #444444;

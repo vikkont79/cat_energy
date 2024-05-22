@@ -2,6 +2,13 @@
   background-color: #EAEAEA;
 }
 
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+}
+
 .example__info {
   @media (min-width: $desktop-width) {
     inline-size: 436px;
