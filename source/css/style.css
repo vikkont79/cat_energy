@@ -760,6 +760,19 @@ img {
   color: #FFFFFF;
 }
 
+@media (min-width: 768px) {
+  .application__wrapper {
+    -webkit-padding-start: 40px;
+            padding-inline-start: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .application__wrapper {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+}
+
 .application__text {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
