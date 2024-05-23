@@ -11,8 +11,9 @@
 
 .add-catalog__block {
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 80px;
   }
 }
 

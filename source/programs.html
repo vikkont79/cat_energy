@@ -104,7 +104,7 @@
   </header>
 
   <main class="main-index">
-    <h1 class="main-index__title">Подбор программы</h1>
+    <h1 class="main-index__title wrapper">Подбор программы</h1>
     <section class="application">
       <div class="wrapper">
         <h2 class="visually-hidden">Форма для выбора параметров программы</h2>
@@ -168,14 +168,15 @@
           <div class="form__group form__group--comment">
             <label class="form__title" for="application-comment">Комментарий</label>
             <div class="field">
-              <textarea class="field__input field__input--comment" name="application-comment" id="application-comment" rows="5">
+              <textarea class="field__input field__input--comment" name="application-comment" id="application-comment"
+                rows="5">
                 расскажите обо всех повадках кота
               </textarea>
             </div>
           </div>
           <fieldset class="form__group form__group--more">
             <legend class="form__title">Дополнительно</legend>
-            <ul class="form__list">
+            <ul class="form__list form__list--more">
               <li class="form__item">
                 <label class="control">
                   <input class="control__input" type="checkbox" name="sugar" checked>
@@ -206,8 +207,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="form__button button" type="submit">отправить заявку</button>
-          <p class="form__add">* - обязательные поля</p>
+          <div class="form__submit">
+            <button class="form__button button" type="submit">отправить заявку</button>
+            <p class="form__add">* - обязательные поля</p>
+          </div>
         </form>
       </div>
     </section>
