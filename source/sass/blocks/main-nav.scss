@@ -1,4 +1,4 @@
-.main-nav { 
+.main-nav {
   padding: 0;
   list-style: none;
   text-align: center;
@@ -16,13 +16,32 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
-  } 
+  }
 
   @media (min-width: $desktop-width) {
-  inline-size: 478px;
-  font-size: 20px;
+    inline-size: 478px;
+    font-size: 20px;
     line-height: 30px;
+  }
 }
+
+@media (max-width: $mobile-width-only) {
+  .main-nav__item {
+    position: relative;
+    padding-block: 22px 24px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      top: 0;
+      inline-size: auto;
+      min-inline-size: 320px;
+      block-size: 1px;
+      background-color: #E6E6E6;
+    }
+  }
 }
 
 .main-nav__link {

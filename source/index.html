@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <header class="page-header">
-    <nav class="page-header__nav">
+    <nav class="page-header__nav page-header__nav--opened">
       <div class="page-header__bar">
         <a class="page-header__logo logo" href="index.html">
           <svg class="logo__icon" width="34" height="38" viewBox="0 0 34 38" fill="none"
@@ -289,6 +289,22 @@
       </a>
     </div>
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.page-header__nav');
+    var navToggle = document.querySelector('.page-header__toggle');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('page-header__nav--closed')) {
+        navMain.classList.remove('page-header__nav--closed');
+        navMain.classList.add('page-header__nav--opened');
+      } else {
+        navMain.classList.add('page-header__nav--closed');
+        navMain.classList.remove('page-header__nav--opened');
+      }
+    });
+  </script>
+
 </body>
 
 </html>
