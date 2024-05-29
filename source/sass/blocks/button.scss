@@ -1,4 +1,7 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   background-color: $basic_green;
   color: $white;
