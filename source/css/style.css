@@ -471,6 +471,8 @@ img {
   border: 0px #D9D9D9 solid;
   -webkit-padding-start: 20px;
           padding-inline-start: 20px;
+  -webkit-padding-after: 18px;
+          padding-block-end: 18px;
 }
 @media (min-width: 768px) {
   .programs__item {
@@ -485,12 +487,27 @@ img {
 }
 
 .programs__title {
-  text-align: center;
+  position: relative;
+  margin: 0;
+  margin-block: 20px;
+  padding-block: 10px;
+  -webkit-padding-start: 71px;
+          padding-inline-start: 71px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+}
+.programs__title::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 4px;
+  inline-size: 50px;
+  block-size: 50px;
+  border-radius: 50px;
+  background-color: #68B738;
 }
 @media (min-width: 768px) {
   .programs__title {
@@ -499,8 +516,33 @@ img {
   }
 }
 
+.programs__item--slim .programs__title::before {
+  background-image: url(../../img/cat-slim.svg);
+  background-repeat: no-repeat;
+  background-size: 36px 50px;
+  background-position: bottom 3px left 7px;
+}
+
+.programs__item--mass .programs__title::before {
+  background-image: url(../../img/cat-pro.svg);
+  background-repeat: no-repeat;
+  background-size: 67px 28px;
+  background-position: bottom 11px left -10px;
+}
+
 .programs__description {
+  position: relative;
+  -webkit-margin-after: 38px;
+          margin-block-end: 38px;
   color: #444444;
+}
+.programs__description::before {
+  position: absolute;
+  content: "";
+  bottom: -22px;
+  inline-size: 240px;
+  block-size: 2px;
+  background-color: #D9D9D9;
 }
 @media (min-width: 768px) {
   .programs__description {
@@ -510,6 +552,12 @@ img {
 }
 
 .programs__button {
+  position: relative;
+  inline-size: 134px;
+  block-size: 24px;
+  -webkit-padding-end: 47px;
+          padding-inline-end: 47px;
+  padding-block: 4px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 1;
@@ -517,6 +565,24 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
+}
+.programs__button::after {
+  position: absolute;
+  top: 13px;
+  right: 0;
+  content: "";
+  inline-size: 32px;
+  block-size: 10px;
+  background-image: url("../../img/arrow.svg");
+  background-size: 24px 12px;
+  background-repeat: no-repeat;
+}
+.programs__button:hover::after {
+  background-image: url(../../img/arrow-hover.svg);
+  background-size: 32px 12px;
+}
+.programs__button:active {
+  opacity: 0.3;
 }
 @media (min-width: 768px) {
   .programs__button {
