@@ -662,6 +662,7 @@ img {
 }
 
 .features__title {
+  margin-block: 20px 40px;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
@@ -682,6 +683,7 @@ img {
   padding: 0;
   list-style-type: none;
   color: #444444;
+  counter-reset: cnt;
 }
 @media (min-width: 768px) {
   .features__list {
@@ -698,11 +700,45 @@ img {
   }
 }
 
+.features__item {
+  position: relative;
+  -webkit-padding-start: 80px;
+          padding-inline-start: 80px;
+  padding-block: 2px 4px;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: left top;
+  counter-increment: cnt 1;
+}
 @media (min-width: 768px) {
   .features__item {
     font-size: 16px;
     line-height: 24px;
   }
+  .features__item::after {
+    position: absolute;
+    content: counter(cnt);
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 1;
+    color: #F2F2F2;
+  }
+}
+
+.features__item--leaf {
+  background-image: url("../../img/leaf.svg");
+}
+
+.features__item--powder {
+  background-image: url("../../img/powder.svg");
+}
+
+.features__item--meal {
+  background-image: url("../../img/meal.svg");
+}
+
+.features__item--weight {
+  background-image: url("../../img/weight.svg");
 }
 
 .example {
@@ -937,27 +973,52 @@ img {
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin-block: 58px 55px;
+  }
+}
+
+.page-footer__logo {
+  margin-block: 39px 32px;
+}
+@media (min-width: 768px) {
+  .page-footer__logo {
+    margin: 0;
+    padding-block: 5px;
   }
 }
 
 .page-footer__list {
   margin: 0;
+  margin-block: 20px 21px;
   padding: 0;
   list-style-type: none;
+}
+@media (min-width: 768px) {
+  .page-footer__list {
+    margin: 0;
+  }
 }
 
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-block: 22px;
   font-size: 16px;
   text-decoration: none;
   color: #444444;
+}
+@media (min-width: 768px) {
+  .page-footer__copyright {
+    margin: 0;
+  }
 }
 
 .social {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 33px;
 }
 

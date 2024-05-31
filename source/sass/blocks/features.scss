@@ -1,4 +1,5 @@
 .features__title {
+  margin-block: 20px 40px;
   font-family: $font-title;
   font-size: 36px;
   line-height: 40px;
@@ -18,6 +19,7 @@
   padding: 0;
   list-style-type: none;
   color: $special_dark_grey;
+  counter-reset: cnt;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -33,8 +35,41 @@
 }
 
 .features__item {
+  position: relative;
+  padding-inline-start: 80px;
+  padding-block: 2px 4px;
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-position: left top;
+  counter-increment: cnt 1;
+
   @media (min-width: $tablet-width) {
-  font-size: 16px;
-  line-height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::after {
+      position: absolute;
+      content: counter(cnt);
+      font-family: $font-title;
+      font-size: 280px;
+      line-height: 1;
+      color: $basic_grey;
+    }
   }
+}
+
+.features__item--leaf {
+  background-image: url("../../img/leaf.svg");
+}
+
+.features__item--powder {
+  background-image: url("../../img/powder.svg");
+}
+
+.features__item--meal {
+  background-image: url("../../img/meal.svg");  
+}
+
+.features__item--weight {
+  background-image: url("../../img/weight.svg"); 
 }
