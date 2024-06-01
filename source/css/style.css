@@ -180,6 +180,7 @@ img {
     display: block;
     position: absolute;
     z-index: 5;
+    inline-size: 100%;
   }
 }
 .main-nav {
@@ -991,7 +992,6 @@ img {
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 @media (min-width: 768px) {
   .page-footer__wrapper {
@@ -1003,7 +1003,26 @@ img {
 }
 
 .page-footer__logo {
+  position: relative;
   margin-block: 39px 32px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .page-footer__logo::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -32px;
+    inline-size: 100%;
+    block-size: 2px;
+    background-color: #D9D9D9;
+  }
+}
+.page-footer__logo:hover {
+  fill-opacity: 0.8;
+}
+.page-footer__logo:active {
+  fill-opacity: 0.6;
 }
 @media (min-width: 768px) {
   .page-footer__logo {
@@ -1013,10 +1032,22 @@ img {
 }
 
 .page-footer__list {
-  margin: 0;
+  position: relative;
   margin-block: 20px 21px;
   padding: 0;
+  text-align: center;
   list-style-type: none;
+}
+@media (max-width: 767px) {
+  .page-footer__list::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -21px;
+    inline-size: 100%;
+    block-size: 2px;
+    background-color: #D9D9D9;
+  }
 }
 @media (min-width: 768px) {
   .page-footer__list {
@@ -1033,17 +1064,63 @@ img {
   text-decoration: none;
   color: #444444;
 }
+.page-footer__copyright:hover .page-footer__icon {
+  fill: #68B738;
+}
+.page-footer__copyright:active {
+  opacity: 0.3;
+}
+.page-footer__copyright:active .page-footer__icon {
+  fill-opacity: 0.3;
+}
 @media (min-width: 768px) {
   .page-footer__copyright {
     margin: 0;
   }
 }
 
+.page-footer__icon {
+  -webkit-margin-start: 22px;
+          margin-inline-start: 22px;
+  fill: #666666;
+}
+
 .social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 33px;
+  gap: 39px;
+}
+@media (min-width: 768px) {
+  .social {
+    gap: 14px;
+  }
+}
+
+.social__icon {
+  fill: #666666;
+}
+
+.social__link:hover .social__icon {
+  fill: #68B738;
+}
+
+.social__link:active .social__icon {
+  fill-opacity: 0.3;
+}
+
+.social__link--facebook .social__icon {
+  fill: none;
+  stroke: #666666;
+}
+
+.social__link--facebook:hover .social__icon {
+  fill: none;
+  stroke: #68B738;
+}
+
+.social__link--facebook:active .social__icon {
+  opacity: 0.3;
 }
 
 .main-catalog__list {

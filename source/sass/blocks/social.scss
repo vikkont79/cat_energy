@@ -1,7 +1,36 @@
-.social {  
+.social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 33px;
+  gap: 39px;
+
+  @media (min-width: $tablet-width) {
+    gap: 14px;
+  }
 }
 
+.social__icon {
+  fill: #666666;
+}
+
+.social__link:hover .social__icon {
+  fill: $basic_green;
+}
+
+.social__link:active .social__icon {
+  fill-opacity: 0.3;
+}
+
+.social__link--facebook .social__icon {
+  fill: none;
+  stroke: #666666;
+}
+
+.social__link--facebook:hover .social__icon {
+  fill: none;
+  stroke: $basic_green;
+}
+
+.social__link--facebook:active .social__icon {
+  opacity: 0.3;
+}
