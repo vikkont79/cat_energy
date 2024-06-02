@@ -999,11 +999,59 @@ img {
   }
 }
 
+.example__history {
+  -webkit-margin-after: 15px;
+          margin-block-end: 15px;
+}
+
+.example__switcher {
+  margin-inline: auto;
+  -webkit-margin-after: 40px;
+          margin-block-end: 40px;
+}
+
+.switcher {
+  inline-size: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .switcher__button {
+  border: none;
+  background-color: inherit;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.switcher__toggles {
+  inline-size: 86px;
+  block-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 13px;
+  margin-block: 8px;
+  padding-inline: 6px;
+  padding-block: 4px;
+  border: 1px #CDCDCD;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+}
+
+.switcher__toggle {
+  inline-size: 36px;
+  block-size: 6px;
+  border: 1px transparent solid;
+  border-radius: 6px;
+  background-color: #68B738;
+}
+
+.switcher__toggle--after {
+  display: none;
 }
 
 .contacts {
