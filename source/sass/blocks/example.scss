@@ -197,6 +197,18 @@
   margin-block-end: 15px;
 }
 
+.example__images {
+  text-align: center;
+}
+
+.example__img {
+  display: none;
+}
+
+.example__img--current {
+  display: inline-block;
+}
+
 .example__switcher {
   margin-inline: auto;
   margin-block-end: 40px;
