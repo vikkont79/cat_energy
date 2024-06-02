@@ -3,9 +3,11 @@
 }
 
 .example__wrapper {
+  border: 1px transparent solid;
+
   @media (min-width: $desktop-width) {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -17,8 +19,9 @@
   }
 }
 
-
 .example__title {
+  margin: 0;
+  margin-block: 25px 40px;
   font-family: $font-title;
   font-size: 36px;
   line-height: 40px;
@@ -31,6 +34,7 @@
 }
 
 .example__text {
+  margin-block-end: 20px;
   color: $special_dark_grey;
 
   @media (min-width: $tablet-width) {
@@ -44,17 +48,18 @@
     display: flex;
     justify-content: space-between;
   }
+
   @media (min-width: $desktop-width) {
     flex-direction: column;
   }
 }
 
 .example__list {
-  text-align: center;
   display: flex;
   justify-content: space-between;
   gap: 32px;
   margin: 0;
+  margin-block-end: 20px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -63,6 +68,7 @@
 }
 
 .example__item {
+  position: relative;
   inline-size: 124px;
   text-align: center;
 
@@ -72,6 +78,13 @@
 }
 
 .example__number {
+  inline-size: 123px;
+  block-size: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px $special_grey solid;
+  border-radius: 5%;
   font-family: $font-title;
   font-size: 24px;
   line-height: 1;
@@ -84,7 +97,13 @@
 }
 
 .example__description {
-  margin: 0;
+  position: relative;  
+  top: -12px;  
+  margin: 0;  
+  margin-inline: 19px;
+  margin-block-end: -12px;
+  border: 1px transparent solid;
+  background-color: #EAEAEA;
   font-size: 12px;
   line-height: 1;
   text-transform: lowercase;
@@ -97,6 +116,7 @@
 }
 
 .example__cost {
+  margin-block-end: 40px;
   text-align: center;
   font-family: $font-title;
   line-height: 20px;
@@ -110,10 +130,10 @@
 
 .example__picture {
   @media (min-width: $desktop-width) {
-  inline-size: 591px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-inline-start: auto;
+    inline-size: 591px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline-start: auto;
   }
 }
