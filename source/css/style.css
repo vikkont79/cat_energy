@@ -695,8 +695,8 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 37px;
-    -webkit-margin-after: 0;
-            margin-block-end: 0;
+    -webkit-margin-after: 619px;
+            margin-block-end: 619px;
     -webkit-padding-after: 47px;
             padding-block-end: 47px;
     font-size: 16px;
@@ -776,24 +776,22 @@ img {
 
 .example {
   background-color: #EAEAEA;
-}
-@media (min-width: 768px) {
-  .example {
-    background-color: #FFFFFF;
-  }
-}
-@media (min-width: 1440px) {
-  .example {
-    background-color: #F2F2F2;
-  }
+  border-bottom: 1px transparent solid;
 }
 
 .example__wrapper {
   border: 1px transparent solid;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .example__wrapper {
     position: relative;
+    top: -619px;
+    -webkit-margin-after: -619px;
+            margin-block-end: -619px;
+  }
+}
+@media (min-width: 1440px) {
+  .example__wrapper {
     top: -179px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -876,8 +874,8 @@ img {
 @media (min-width: 768px) {
   .example__list {
     gap: 42px;
-    -webkit-margin-after: 55px;
-            margin-block-end: 55px;
+    -webkit-margin-after: 80px;
+            margin-block-end: 80px;
   }
 }
 @media (min-width: 1440px) {
@@ -988,6 +986,12 @@ img {
   }
 }
 
+@media (min-width: 768px) {
+  .example__picture {
+    border-top: 1px transparent solid;
+    padding-inline: 59px 57px;
+  }
+}
 @media (min-width: 1440px) {
   .example__picture {
     inline-size: 591px;
@@ -1002,6 +1006,12 @@ img {
 .example__history {
   -webkit-margin-after: 15px;
           margin-block-end: 15px;
+}
+@media (min-width: 768px) {
+  .example__history {
+    -webkit-margin-after: 25px;
+            margin-block-end: 25px;
+  }
 }
 
 .example__images {
@@ -1021,12 +1031,23 @@ img {
   -webkit-margin-after: 40px;
           margin-block-end: 40px;
 }
+@media (min-width: 768px) {
+  .example__switcher {
+    -webkit-margin-after: 55px;
+            margin-block-end: 55px;
+  }
+}
 
 .switcher {
   inline-size: 210px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .switcher {
+    inline-size: 592px;
+  }
 }
 
 .switcher__button {
@@ -1052,6 +1073,11 @@ img {
   border: 1px #CDCDCD;
   border-radius: 6px;
   background-color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  .switcher__toggles {
+    flex-grow: 1;
+  }
 }
 
 .switcher__toggle {

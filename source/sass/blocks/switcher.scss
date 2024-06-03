@@ -3,6 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  @media (min-width: $tablet-width) {
+    inline-size: 592px;
+  }
 }
 
 .switcher__button {
@@ -27,7 +31,11 @@
   padding-block: 4px;
   border: 1px $special_grey;
   border-radius: 6px;
-  background-color: $white;
+  background-color: $white;  
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .switcher__toggle {
