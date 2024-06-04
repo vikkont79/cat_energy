@@ -1,5 +1,4 @@
-.main-nav {
-  inline-size: auto;
+.main-nav {  
   padding: 0;
   list-style: none;
   text-align: center;
@@ -9,11 +8,6 @@
   font-weight: 500;
   text-transform: uppercase;
   background-color: $white;
-
-  @media (max-width: $mobile-width-only) {
-    min-inline-size: 320px;
-    margin-inline: auto;
-  }
 
   @media (min-width: $tablet-width) {
     inline-size: 440px;

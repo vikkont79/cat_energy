@@ -184,7 +184,6 @@ img {
   }
 }
 .main-nav {
-  inline-size: auto;
   padding: 0;
   list-style: none;
   text-align: center;
@@ -194,12 +193,6 @@ img {
   font-weight: 500;
   text-transform: uppercase;
   background-color: #FFFFFF;
-}
-@media (max-width: 767px) {
-  .main-nav {
-    min-inline-size: 320px;
-    margin-inline: auto;
-  }
 }
 @media (min-width: 768px) {
   .main-nav {
