@@ -68,11 +68,14 @@
 }
 
 .contacts__map {
-  position: relative; 
-}
-
-.contacts__img {
+  display: block;
   inline-size: 100%;
+  block-size: 362px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    block-size: 400px;
+  }  
 }
 
 .contacts__pin {
