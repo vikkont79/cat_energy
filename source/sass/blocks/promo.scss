@@ -1,73 +1,83 @@
 .promo {
   position: relative;
+  padding-block-start: 27px;
   text-align: center;
   font-family: $font-title;
-  background-image: url("../../img/promo-background-mobile.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  color: $white;
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  @media (max-width: $mobile-width-only) {
     background-color: $basic_green;
-    opacity: 0.85;
+    background-image: url("../../img/promo-background-mobile.jpg"), linear-gradient($basic_green 0, $basic_green 302px, $white 302px);
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: $white;
+
+    &::after {
+      position: absolute;
+      content: "";
+      inset: 0;
+      block-size: 302px;
+      background-color: $basic_green;
+      opacity: 0.85;
+    }
   }
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    background-image: none;
-
-    &::after {
-      background-color: $white;
-    }
+    background-color: transparent;
   }
 
-  @media (min-width: $desktop-width) {
-    z-index: -1;
-    min-inline-size: 720px;
-    block-size: 600px;
-    margin-inline-start: 720px;
-    background-image: url("../../img/promo-background-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  @media (min-width: $desktop-width) {    
 
-    &::after {
+    &::before{
+      position: absolute;
+      content: "";
+      z-index: -2;
+      top: -95px;
+      bottom: 0;
+      left: 50%;
+      right: 0;
       background-color: $basic_green;
+      background-image: url("../../img/promo-background-mobile.jpg");
+      background-repeat: no-repeat;
+      background-position: right 100%;             
+    }
+    
+    &::after {
+      position: absolute;
+      content: "";
+      inset: 0;
+      left: 50%;
+      background-color: $basic_green;
+      opacity: 0.85;
     }
   }
 }
 
+
 .promo__wrapper {
   position: relative;
-  margin-block-end: 178px;
-  border: 1px transparent solid;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    padding-inline-start: 90px;
+    padding-inline: 90px;
+    padding-block: 38px 526px;
     margin-block-end: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-inline-start: 80px;
-    margin-inline-start: -640px;
+    padding-inline: 80px 610px;
+    padding-block: 84px 185px;
   }
 }
 
 .promo__title {
-  margin-block: 27px 25px;
+  margin-block: 0 25px;
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    margin-block: 65px 41px;
+    margin-block: 0 41px;
     font-size: 60px;
     line-height: 1;
     color: $black;
@@ -75,7 +85,7 @@
 }
 
 .promo__slogan {
-  margin-block-end: 164px;
+  margin-block: 0 29px;
   line-height: 1;
   text-transform: uppercase;
 
@@ -88,12 +98,12 @@
 }
 
 .promo__img {
-  position: absolute;
-  top: 167px;
-  left: 0;
+  inline-size: 280px;
 
   @media (min-width: $tablet-width) {
-    top: 265px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     inline-size: 709px;
     block-size: 609px;
     z-index: -1;
@@ -101,16 +111,13 @@
 
   @media (min-width: $desktop-width) {
     top: 32px;
-    left: 478px;
+    left: calc(50% - 162px);
     inline-size: 552px;
     block-size: 499px;
   }
 }
 
 .promo__button {
-  position: absolute;
-  top: 440px;
-  left: 0;
   inline-size: 280px;
   block-size: 40px;
   cursor: pointer;
@@ -125,9 +132,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: static;
     inline-size: 244px;
-    block-size: 54px;   
-    margin-block-end: 526px; 
+    block-size: 54px;
   }
 }
+
+
+    

@@ -210,6 +210,7 @@ img {
     inline-size: 478px;
     font-size: 20px;
     line-height: 30px;
+    background-color: transparent;
   }
 }
 
@@ -246,6 +247,11 @@ img {
     background-color: #68B738;
   }
 }
+@media (min-width: 768px) and (min-width: 1440px) {
+  .main-nav__item:active::before {
+    background-color: #FFFFFF;
+  }
+}
 
 @media (min-width: 768px) {
   .main-nav__item--active {
@@ -260,10 +266,20 @@ img {
     background-color: #68B738;
   }
 }
+@media (min-width: 1440px) {
+  .main-nav__item--active::before {
+    background-color: #FFFFFF;
+  }
+}
 
 .main-nav__link {
   color: inherit;
   text-decoration: none;
+}
+@media (min-width: 1440px) {
+  .main-nav__link {
+    color: #FFFFFF;
+  }
 }
 
 .main-index__title {
@@ -296,82 +312,86 @@ img {
 
 .promo {
   position: relative;
+  -webkit-padding-before: 27px;
+          padding-block-start: 27px;
   text-align: center;
   font-family: "Oswald", sans-serif;
-  background-image: url("../../img/promo-background-mobile.jpg");
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  color: #FFFFFF;
 }
-.promo::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #68B738;
-  opacity: 0.85;
+@media (max-width: 767px) {
+  .promo {
+    background-color: #68B738;
+    background-image: url("../../img/promo-background-mobile.jpg"), linear-gradient(#68B738 0, #68B738 302px, #FFFFFF 302px);
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+  }
+  .promo::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    block-size: 302px;
+    background-color: #68B738;
+    opacity: 0.85;
+  }
 }
 @media (min-width: 768px) {
   .promo {
     text-align: left;
-    background-image: none;
-  }
-  .promo::after {
-    background-color: #FFFFFF;
+    background-color: transparent;
   }
 }
 @media (min-width: 1440px) {
-  .promo {
-    z-index: -1;
-    min-inline-size: 720px;
-    block-size: 600px;
-    -webkit-margin-start: 720px;
-            margin-inline-start: 720px;
+  .promo::before {
+    position: absolute;
+    content: "";
+    z-index: -2;
+    top: -95px;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    background-color: #68B738;
     background-image: url("../../img/promo-background-mobile.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: right 100%;
   }
   .promo::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    left: 50%;
     background-color: #68B738;
+    opacity: 0.85;
   }
 }
 
 .promo__wrapper {
   position: relative;
-  -webkit-margin-after: 178px;
-          margin-block-end: 178px;
-  border: 1px transparent solid;
   z-index: 1;
 }
 @media (min-width: 768px) {
   .promo__wrapper {
-    -webkit-padding-start: 90px;
-            padding-inline-start: 90px;
+    padding-inline: 90px;
+    padding-block: 38px 526px;
     -webkit-margin-after: 0;
             margin-block-end: 0;
   }
 }
 @media (min-width: 1440px) {
   .promo__wrapper {
-    -webkit-padding-start: 80px;
-            padding-inline-start: 80px;
-    -webkit-margin-start: -640px;
-            margin-inline-start: -640px;
+    padding-inline: 80px 610px;
+    padding-block: 84px 185px;
   }
 }
 
 .promo__title {
-  margin-block: 27px 25px;
+  margin-block: 0 25px;
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
 }
 @media (min-width: 768px) {
   .promo__title {
-    margin-block: 65px 41px;
+    margin-block: 0 41px;
     font-size: 60px;
     line-height: 1;
     color: #000000;
@@ -379,8 +399,7 @@ img {
 }
 
 .promo__slogan {
-  -webkit-margin-after: 164px;
-          margin-block-end: 164px;
+  margin-block: 0 29px;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -395,13 +414,13 @@ img {
 }
 
 .promo__img {
-  position: absolute;
-  top: 167px;
-  left: 0;
+  inline-size: 280px;
 }
 @media (min-width: 768px) {
   .promo__img {
-    top: 265px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     inline-size: 709px;
     block-size: 609px;
     z-index: -1;
@@ -410,16 +429,13 @@ img {
 @media (min-width: 1440px) {
   .promo__img {
     top: 32px;
-    left: 478px;
+    left: calc(50% - 162px);
     inline-size: 552px;
     block-size: 499px;
   }
 }
 
 .promo__button {
-  position: absolute;
-  top: 440px;
-  left: 0;
   inline-size: 280px;
   block-size: 40px;
   cursor: pointer;
@@ -432,11 +448,8 @@ img {
 }
 @media (min-width: 768px) {
   .promo__button {
-    position: static;
     inline-size: 244px;
     block-size: 54px;
-    -webkit-margin-after: 526px;
-            margin-block-end: 526px;
   }
 }
 
