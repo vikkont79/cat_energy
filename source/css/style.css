@@ -320,7 +320,7 @@ img {
 @media (max-width: 767px) {
   .promo {
     background-color: #68B738;
-    background-image: url("../../img/promo-background-mobile.jpg"), linear-gradient(#68B738 0, #68B738 302px, #FFFFFF 302px);
+    background-image: url("../../img/promo-background-mobile.jpg"), linear-gradient(#68B738 302px, #FFFFFF 302px);
     background-position: center top;
     background-repeat: no-repeat;
     color: #FFFFFF;
@@ -380,6 +380,8 @@ img {
   .promo__wrapper {
     padding-inline: 80px 610px;
     padding-block: 84px 185px;
+    -webkit-margin-after: 82px;
+            margin-block-end: 82px;
   }
 }
 
@@ -501,7 +503,7 @@ img {
 .programs__title {
   position: relative;
   margin: 0;
-  margin-block: 30px;
+  margin-block: 30px 29px;
   -webkit-padding-start: 71px;
           padding-inline-start: 71px;
   font-family: "Oswald", sans-serif;
@@ -519,6 +521,11 @@ img {
   block-size: 50px;
   border-radius: 50px;
   background-color: #68B738;
+}
+.programs__title::after {
+  position: absolute;
+  content: "";
+  background-size: contain;
 }
 @media (min-width: 768px) {
   .programs__title {
@@ -552,41 +559,55 @@ img {
   }
 }
 
-.programs__item--slim .programs__title::before {
+.programs__item--slim .programs__title::after {
+  top: -9px;
+  left: 7px;
+  inline-size: 36px;
+  block-size: 50px;
   background-image: url(../../img/cat-slim.svg);
   background-repeat: no-repeat;
-  background-size: 36px 50px;
-  background-position: bottom 3px left 7px;
 }
 @media (min-width: 768px) {
-  .programs__item--slim .programs__title::before {
-    background-size: 140px 194px;
-    background-position: bottom 17px left 30px;
+  .programs__item--slim .programs__title::after {
+    top: 4px;
+    left: auto;
+    right: 92px;
+    inline-size: 140px;
+    block-size: 194px;
   }
 }
 @media (min-width: 1440px) {
-  .programs__item--slim .programs__title::before {
-    background-size: 70px 97px;
-    background-position: bottom 9px left 15px;
+  .programs__item--slim .programs__title::after {
+    top: -36px;
+    left: 15px;
+    inline-size: 70px;
+    block-size: 97px;
   }
 }
 
-.programs__item--mass .programs__title::before {
+.programs__item--mass .programs__title::after {
+  bottom: 4px;
+  left: -10px;
+  inline-size: 67px;
+  block-size: 28px;
   background-image: url(../../img/cat-pro.svg);
   background-repeat: no-repeat;
-  background-size: 67px 28px;
-  background-position: bottom 11px left -10px;
 }
 @media (min-width: 768px) {
-  .programs__item--mass .programs__title::before {
-    background-size: 268px 112px;
-    background-position: bottom 44px left -36px;
+  .programs__item--mass .programs__title::after {
+    top: 58px;
+    left: auto;
+    right: 28px;
+    inline-size: 268px;
+    block-size: 112px;
   }
 }
 @media (min-width: 1440px) {
-  .programs__item--mass .programs__title::before {
-    background-size: 134px 56px;
-    background-position: bottom 24px left -19px;
+  .programs__item--mass .programs__title::after {
+    top: -4px;
+    left: -19px;
+    inline-size: 134px;
+    block-size: 56px;
   }
 }
 

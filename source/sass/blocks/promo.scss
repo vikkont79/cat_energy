@@ -6,7 +6,7 @@
 
   @media (max-width: $mobile-width-only) {
     background-color: $basic_green;
-    background-image: url("../../img/promo-background-mobile.jpg"), linear-gradient($basic_green 0, $basic_green 302px, $white 302px);
+    background-image: url("../../img/promo-background-mobile.jpg"), linear-gradient($basic_green 302px, $white 302px);
     background-position: center top;
     background-repeat: no-repeat;
     color: $white;
@@ -67,6 +67,7 @@
   @media (min-width: $desktop-width) {
     padding-inline: 80px 610px;
     padding-block: 84px 185px;
+    margin-block-end: 82px;
   }
 }
 
