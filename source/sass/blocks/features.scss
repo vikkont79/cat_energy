@@ -45,8 +45,11 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    padding-block-end: 26px;
-    margin-block-end: 179px;
+    padding-block-end: 26px;  
+    
+    &::after {
+      display: none;
+    }
   }
 }
 

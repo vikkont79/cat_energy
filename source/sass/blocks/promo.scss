@@ -6,10 +6,15 @@
 
   @media (max-width: $mobile-width-only) {
     background-color: $basic_green;
-    background-image: url("../../img/promo-background-mobile.jpg"), linear-gradient($basic_green 302px, $white 302px);
-    background-position: center top;
+    background-image: url("../../img/promo-background-mobile.jpg"), linear-gradient($basic_green, $basic_green 302px, $white 302px);
+    background-position: center top;    
     background-repeat: no-repeat;
     color: $white;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/promo-background-mobile@2x.jpg"), linear-gradient($basic_green, $basic_green 302px, $white 302px);
+      background-size: 320px auto;
+    }
 
     &::after {
       position: absolute;
@@ -30,22 +35,29 @@
 
     &::before{
       position: absolute;
-      content: "";
-      z-index: -2;
+      content: "";      
       top: -95px;
       bottom: 0;
       left: 50%;
       right: 0;
       background-color: $basic_green;
-      background-image: url("../../img/promo-background-mobile.jpg");
-      background-repeat: no-repeat;
-      background-position: right 100%;             
+      background-image: url("../../img/promo-background-desktop.jpg");
+      background-repeat: no-repeat;      
+      background-position: right 100%;   
+      
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/promo-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
     }
+
+    
     
     &::after {
       position: absolute;
       content: "";
       inset: 0;
+      top: -95px;
       left: 50%;
       background-color: $basic_green;
       opacity: 0.85;

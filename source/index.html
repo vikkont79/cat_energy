@@ -108,7 +108,12 @@
       <div class="promo__wrapper wrapper">
         <h1 class="promo__title">Функциональное<br>питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__img" src="img/index-can-mobile.png" width="280" height="270" alt="Банка кошкорма">
+        <picture>
+          <source media="(min-width:  1440px)" srcset="img/index-can-desktop.png, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet.png, img/index-can-tablet@2x.png 2x">
+          <img class="promo__img" src="img/index-can-mobile.png" width="280" height="270"
+            srcset="img/index-can-mobile@2x.png 2x" alt="Банка кошкорма">
+        </picture>
         <a class="promo__button button" href="programs.html">подобрать программу</a>
       </div>
     </section>
@@ -176,9 +181,11 @@
           <div class="example__history">
             <div class="example__images">
               <img class="example__img example__img--before example__img--current" src="img/cat-before-mobile.png"
-                width="280" height="232" alt="Фото кота до похудения">
-              <img class="example__img example__img--after" src="img/cat-after-mobile.png" width="243" height="232"
-                alt="Фото кота после похудения">
+                srcset="img/cat-before-mobile@2x.png 2x" width="280" height="232" alt="Фото кота до похудения">
+              <img class="example__img example__img--after" src="img/cat-after-mobile.png"
+                srcset="img/cat-after-mobile@2x.png 2x" width="243" height="232" alt="Фото кота после похудения">
+              <img class="example__img example__img--duo" src="img/image_cat_tablet.png"
+                srcset="img/image_cat_tablet@2x.png 2x" width="591" height="511" alt="Совмещённое изображение котов">
             </div>
           </div>
           <div class="example__switcher switcher">

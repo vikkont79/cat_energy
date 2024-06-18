@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-block-end: 75px;
+    padding-block: 0 75px;
   }
 }
 
@@ -42,7 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-block-end: 146px;
+    margin-block: 43px 146px;
   }
 }
 
@@ -197,7 +197,7 @@
 }
 
 .example__history {
-  margin-block-end: 15px;
+   margin-block-end: 15px;
 
   @media (min-width: $tablet-width) {
     margin-block-end: 25px;
@@ -205,15 +205,39 @@
 }
 
 .example__images {
+  position: relative;
   text-align: center;
+
+  @media (min-width: $tablet-width) {    
+    inline-size: 592px;
+    block-size: 511px;    
+  }
 }
 
 .example__img {
+  inline-size: 280px;
+  block-size: 232px;
+  text-align: center;
   display: none;
+
+  @media (min-width: $tablet-width) {    
+    inline-size: 592px;
+    block-size: 511px;    
+  }
 }
 
 .example__img--current {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.example__img--duo {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .example__switcher {
