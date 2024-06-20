@@ -1,11 +1,52 @@
 .gift {
+  position: relative;
+  margin-block: 35px;
   background-color: $basic_green;
-  background-image: url("../../img/catbag.jpg");
+  background-image: url("../../img/gift-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;  
+  
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/gift-mobile@2x.jpg"); 
+    background-size: 280px auto;  
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -35px;
+    inline-size: 280px;
+    block-size: 2px;
+    background-color: $special_grey;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: $basic_green;
+    opacity: 0.85;
+  }
 }
 
 .gift__text {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding-block: 187px 43px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: $white;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 58px;
+    left: 101px;
+    inline-size: 78px;
+    block-size: 80px;
+    background-image: url("../../img/icon-gift.svg");    
+   
+  }
 }

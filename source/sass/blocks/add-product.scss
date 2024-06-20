@@ -1,13 +1,27 @@
+.add-product {
+  padding-block: 13px 19px;  
+  border-top: 2px $special_grey solid;
+}
+
 .add-product__title {
+  margin-block: 0 13px;
   font-family: $font-title;
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
-  color: #222222;
+  color: #222222;  
 }
 
 .add-product__list {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 0 15px;
   line-height: 1;
   color: $special_dark_grey;
+}
+
+.add-product__button {  
+  inline-size: 280px;
+  block-size: 40px;
 }
