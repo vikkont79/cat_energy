@@ -1,5 +1,6 @@
 .contacts {
   position: relative;
+  background-color: $basic_grey;
 
   @media (min-width: $desktop-width) {
     z-index: 0;

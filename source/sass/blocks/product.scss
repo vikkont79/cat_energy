@@ -2,15 +2,35 @@
   padding-inline: 20px;
   padding-block: 8px 11px;
   border-top: 2px #EBEBEB solid;
+
+  @media (min-width: $tablet-width) {
+    padding-inline: 36px;
+    padding-block: 8px 39px;
+    text-align: center;
+    border-top: none;
+    background-image: linear-gradient($white 81px, $basic_grey 81px);
+  }
 }
 
 .product__info {
   display: flex;
   margin-block: 11px 13px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    margin-block: 0 33px;
+  }
 }
 
-.product__link {  
-  display: inline-block;
+.product__picture {
+  @media (min-width: $tablet-width) {
+    padding-inline: 42px;
+    padding-block: 0 34px;
+  }
+}
+
+.product__link {
   text-decoration: none;
   color: inherit;
 }
@@ -21,6 +41,13 @@
   block-size: 86px;
   margin-inline: 36px;
   margin-block: 14px 12px;
+
+  @media (min-width: $tablet-width) {
+    inline-size: 161px;
+    block-size: 172px;
+    margin-inline: 8px;
+    margin-block: 28px 0;
+  }
 }
 
 .product__img--big {
@@ -28,10 +55,21 @@
   block-size: 100px;
   margin-inline: 28px;
   margin-block: 11px 1px;
+
+  @media (min-width: $tablet-width) {
+    inline-size: 168px;
+    block-size: 206px;
+    margin: 0;
+    margin-block: 0 -6px;
+  }
 }
 
 .product__description {
   inline-size: 142px;
+
+  @media (min-width: $tablet-width) {
+    inline-size: 251px;
+  }
 }
 
 .product__title {
@@ -42,6 +80,20 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    inline-size: 150px;
+    margin-inline: auto;
+    margin-block: 34px 21px;    
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.product__title br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  } 
 }
 
 .product__list {
@@ -49,24 +101,39 @@
   font-size: 12px;
   line-height: 16px;
   color: $special_dark_grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .product__item {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-block-end: 14px;  
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -9px;
+      inline-size: 100%;
+      block-size: 1px;
+      background-color: $special_grey;
+    }
+  }
 }
 
 .product__button {
-  margin-block-end: 14px;
   inline-size: 280px;
   block-size: 40px;
+  margin-block-end: 14px;
+
+  @media (min-width: $tablet-width) {
+    inline-size: 252px;
+    margin: 0;
+  }
 }
 
-.product__button--show-more {
-  margin: 0;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  background-color: $basic_grey;
-  color: $special_dark_grey;
-}

@@ -1,6 +1,14 @@
 .main-catalog__wrapper {
   inline-size: 320px;
   margin-inline: auto;
+
+  @media (min-width: $tablet-width) {
+    inline-size: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    inline-size: 1220px;
+  }
 }
 
 .main-catalog__list {
@@ -21,9 +29,3 @@
   }
 }
 
-.main-catalog__item { 
-  @media (min-width: $tablet-width) {
-    text-align: center;
-    background-color: $basic_grey;
-  }
-}

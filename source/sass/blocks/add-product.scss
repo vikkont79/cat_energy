@@ -1,6 +1,18 @@
 .add-product {
   padding-block: 13px 19px;  
-  border-top: 2px $special_grey solid;
+  border-top: 1px $special_grey solid;
+
+  @media (min-width: $tablet-width) {
+    padding-inline: 37px;
+    padding-block: 26px 28px;
+  }
+}
+
+.add-product__info {
+  @media (min-width: $tablet-width) {    
+    display: flex;
+    justify-content: space-between;    
+  }
 }
 
 .add-product__title {
@@ -10,7 +22,11 @@
   line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
-  color: #222222;  
+  color: #222222;    
+
+  @media (min-width: $tablet-width) {
+    margin-block: 0 25px;
+  }
 }
 
 .add-product__list {
@@ -19,9 +35,21 @@
   margin-block: 0 15px;
   line-height: 1;
   color: $special_dark_grey;
+
+  @media (min-width: $tablet-width) {
+    gap: 49px;
+  }
+}
+
+.add-product__price {
+  margin: 0;
 }
 
 .add-product__button {  
   inline-size: 280px;
   block-size: 40px;
+
+  @media (min-width: $tablet-width) {
+    inline-size: 632px;
+  }
 }
