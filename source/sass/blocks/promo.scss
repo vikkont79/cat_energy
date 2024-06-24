@@ -49,9 +49,7 @@
         background-image: url("../../img/promo-background-desktop@2x.jpg");
         background-size: 720px auto;
       }
-    }
-
-    
+    }    
     
     &::after {
       position: absolute;
@@ -133,17 +131,7 @@
 .promo__button {
   inline-size: 280px;
   block-size: 40px;
-  cursor: pointer;
-
-  &:hover,
-  &:active {
-    background-color: #5EAA2F;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
-
+  
   @media (min-width: $tablet-width) {
     inline-size: 244px;
     block-size: 54px;

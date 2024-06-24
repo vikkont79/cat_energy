@@ -47,6 +47,13 @@ img {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
+}
+.button:hover, .button:active {
+  background-color: #5EAA2F;
+}
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .page {
@@ -478,13 +485,6 @@ img {
 .promo__button {
   inline-size: 280px;
   block-size: 40px;
-  cursor: pointer;
-}
-.promo__button:hover, .promo__button:active {
-  background-color: #5EAA2F;
-}
-.promo__button:active {
-  color: rgba(255, 255, 255, 0.3);
 }
 @media (min-width: 768px) {
   .promo__button {
