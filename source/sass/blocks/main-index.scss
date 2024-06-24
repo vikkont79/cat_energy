@@ -21,7 +21,12 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    margin-block: 65px 82px; 
     font-size: 60px;
     line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-block: 74px 84px; 
   }
 }

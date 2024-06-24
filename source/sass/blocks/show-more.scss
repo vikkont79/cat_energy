@@ -32,6 +32,10 @@
     line-height: 22px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-inline: 30px;
+  }
+
   &::before,
   &::after {
     position: absolute;
@@ -64,6 +68,10 @@
     font-size: 16px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-inline: 15px;
+  }
 }
 
 .show-more__button {
@@ -74,6 +82,10 @@
   font-weight: 400;
   background-color: $basic_grey;
   color: $special_dark_grey;
+
+  @media (min-width: $desktop-width) {
+    inline-size: 169px;
+  }
 
   &:hover,
   &:active {

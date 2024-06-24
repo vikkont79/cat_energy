@@ -21,6 +21,16 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    margin-block: 0;
+    background-image: url("../../img/gift-desktop.jpg");
+    background-size: 245px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift-desktop@2x.jpg");
+    }
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -59,6 +69,12 @@
     text-align: left;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-inline-start: 0;
+    padding-block: 185px 42px;
+    text-align: center;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -73,6 +89,11 @@
       left: 77px;
       inline-size: 80px;
       block-size: 82px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 55px;
+      left: 84px;
     }
   }
 }
