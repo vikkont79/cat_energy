@@ -1,4 +1,11 @@
+.field {
+  display: flex;
+  align-items: center; 
+  margin-block-start: 0; 
+}
+
 .field__label {
+  margin-inline-end: 13px;
   font-family: $font-title;
   font-size: 16px;
   text-transform: uppercase;
@@ -6,9 +13,13 @@
 }
 
 .field__input {
+  flex-grow: 1;
+  padding-inline-start: 15px;
+  padding-block: 13px 14px;
   border: 1px #E7E7E7 solid;
   font-family: $font-title;
   font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
   color: $special_dark_grey;
 }

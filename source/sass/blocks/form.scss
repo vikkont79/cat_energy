@@ -21,7 +21,20 @@
   }
 }
 
+.form__group--pet {
+  padding-block-end: 11px;
+  border-bottom: 1px #D9D9D9 solid;
+}
+
+.form__group--program {
+  margin-block-end: 26px;
+  padding-block-end: 6px;
+  border-bottom: 1px #D9D9D9 solid;
+}
+
 .form__group--contacts {
+  padding-block-end: 10px;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -29,7 +42,20 @@
   }
 }
 
+.form__group--comment {
+  padding-block-end: 22px;
+}
+
+.form__group--comment .field {
+  padding-block-start: 38px;
+}
+
+.form__group--more .form__title {
+  margin-block-end: 12px;
+}
+
 .form__title {
+  margin-block-end: 35px;
   font-family: $font-title;
   font-size: 24px;
   line-height: 26px;
@@ -38,6 +64,7 @@
 .form__list {
   margin: 0;
   padding: 0;
+  padding-block: 22px 8px;
   list-style-type: none;
 }
 
@@ -55,22 +82,36 @@
   }
 }
 
+.form__item {
+  margin-block-end: 13px;
+}
+
 .form__submit {
+  padding-block: 13px 32px;
   text-align: center;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 282px 282px;
-    gap: 60px;    
+    gap: 60px;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 568px 568px;
     gap: 80px;
   }
 }
 
+.form__button {
+  inline-size: 280px;
+  block-size: 40px;
+  margin-block-end: 21px;
+}
+
 .form__add {
   text-align: center;
   line-height: 16px;
+
   @media (min-width: $tablet-width) {
     text-align: left;
   }

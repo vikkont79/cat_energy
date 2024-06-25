@@ -1,3 +1,11 @@
+.main-catalog {
+  padding-block-start: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-block-start: 28px;
+  }
+}
+
 .main-catalog__wrapper {
   inline-size: 320px;
   margin-inline: auto;

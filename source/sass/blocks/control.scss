@@ -1,6 +1,27 @@
-.control__label {
+.control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-inline-start: 46px;
+}
+
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+
+.control__mark {
+  position: absolute;
+  left: 0;
+  inline-size: 30px;
+  block-size: 30px;
+  border: 1px $special_grey solid;  
+}
+
+.control__label { 
+  padding-block: 6px;
   font-family: $font-title;
   font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
   color: #222222;
 }
