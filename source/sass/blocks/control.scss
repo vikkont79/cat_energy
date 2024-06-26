@@ -3,9 +3,13 @@
   display: flex;
   align-items: center;
   padding-inline-start: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding-inline-start: 60px;
+  }
 }
 
-.control__input[type="radio"] + .control__mark {
+.control__input[type="radio"]+.control__mark {
   border-radius: 50%;
 }
 
@@ -14,14 +18,25 @@
   left: 0;
   inline-size: 30px;
   block-size: 30px;
-  border: 1px $special_grey solid;  
+  border: 1px $special_grey solid;
+
+  @media (min-width: $tablet-width) {
+    inline-size: 40px;
+    block-size: 40px;
+  }
 }
 
-.control__label { 
+.control__label {
   padding-block: 6px;
   font-family: $font-title;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    padding-block: 5px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

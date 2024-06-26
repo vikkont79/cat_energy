@@ -24,16 +24,32 @@
 .form__group--pet {
   padding-block-end: 11px;
   border-bottom: 1px #D9D9D9 solid;
+
+  @media (min-width: $tablet-width) {
+    padding-block-end: 52px;
+    border: none;
+  }
 }
 
 .form__group--program {
   margin-block-end: 26px;
   padding-block-end: 6px;
   border-bottom: 1px #D9D9D9 solid;
+
+  @media (min-width: $tablet-width) {
+    margin-block-end: 75px;
+    padding-block-end: 4px;
+    padding-inline-start: 28px;
+    border: 1px #D9D9D9 solid;
+  }
 }
 
 .form__group--contacts {
   padding-block-end: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-block-end: 45px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -44,14 +60,26 @@
 
 .form__group--comment {
   padding-block-end: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-block-end: 65px;
+  }
 }
 
 .form__group--comment .field {
   padding-block-start: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-block-start: 76px;
+  }
 }
 
 .form__group--more .form__title {
   margin-block-end: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-block-end: 32px;
+  }
 }
 
 .form__title {
@@ -59,6 +87,12 @@
   font-family: $font-title;
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-block-end: 76px;
+    font-size: 36px;
+    line-height: 1;
+  }
 }
 
 .form__list {
@@ -66,6 +100,10 @@
   padding: 0;
   padding-block: 22px 8px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    padding-block: 25px 8px;
+  }
 }
 
 .form__list--more {
@@ -73,7 +111,7 @@
     display: grid;
     grid-template-columns: 221px 221px;
     column-gap: 123px;
-    row-gap: 32px;
+    row-gap: 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -94,11 +132,13 @@
     display: grid;
     grid-template-columns: 282px 282px;
     gap: 60px;
+    margin-block: 20px 19px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 568px 568px;
     gap: 80px;
+    margin-block: 27px 29px;
   }
 }
 
@@ -106,13 +146,24 @@
   inline-size: 280px;
   block-size: 40px;
   margin-block-end: 21px;
+
+  @media (min-width: $desktop-width) {
+    inline-size: 568px;
+    block-size: 52px;
+  }
 }
 
 .form__add {
+  margin: 0;
   text-align: center;
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
+    margin-block-start: 15px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-block-start: 17px;
   }
 }
