@@ -1,0 +1,21 @@
+.logo {
+    display: block;
+    margin-inline-end: 56px;
+
+    @media (min-width: $tablet-width) {
+        margin: 0;
+      }
+}
+
+.logo__img {
+    display: block;
+    inline-size: 34px;
+
+    @media (min-width: $tablet-width) {
+        inline-size: 174px;
+      }
+
+      @media (min-width: $desktop-width) {
+        inline-size: 202px;
+      }
+}
