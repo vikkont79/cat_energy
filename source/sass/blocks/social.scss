@@ -1,13 +1,15 @@
 .social {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 39px;
+  padding-inline: 73px 81px; 
 
   @media (min-width: $tablet-width) {
+    justify-content: center;
     gap: 14px;
   }
 }
+
 
 .social__icon {
   fill: #666666;

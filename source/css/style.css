@@ -496,7 +496,9 @@ img {
 }
 
 .promo__img {
+  display: block;
   inline-size: 280px;
+  margin-block-end: 3px;
 }
 @media (min-width: 768px) {
   .promo__img {
@@ -552,8 +554,8 @@ img {
 .programs__item {
   background-color: #F2F2F2;
   border: 0px #D9D9D9 solid;
-  padding-inline-start: 20px;
-  padding-block-end: 18px;
+  padding-inline: 20px;
+  padding-block-end: 20px;
 }
 @media (min-width: 768px) {
   .programs__item {
@@ -583,7 +585,7 @@ img {
 .programs__title::before {
   position: absolute;
   content: "";
-  left: 0;
+  left: 2px;
   top: -6px;
   inline-size: 50px;
   block-size: 50px;
@@ -628,7 +630,7 @@ img {
 
 .programs__item--slim .programs__title::after {
   top: -9px;
-  left: 7px;
+  left: 9px;
   inline-size: 36px;
   block-size: 50px;
   background-image: url(../../img/cat-slim.svg);
@@ -654,7 +656,7 @@ img {
 
 .programs__item--mass .programs__title::after {
   bottom: 4px;
-  left: -10px;
+  left: -7px;
   inline-size: 67px;
   block-size: 28px;
   background-image: url(../../img/cat-pro.svg);
@@ -680,13 +682,13 @@ img {
 
 .programs__description {
   position: relative;
-  margin-block-end: 38px;
+  margin-block-end: 41px;
   color: #444444;
 }
 .programs__description::before {
   position: absolute;
   content: "";
-  bottom: -22px;
+  bottom: -23px;
   inline-size: 240px;
   block-size: 2px;
   background-color: #D9D9D9;
@@ -725,13 +727,13 @@ img {
 }
 .programs__button::after {
   position: absolute;
-  top: 13px;
+  top: 11px;
   right: 0;
   content: "";
   inline-size: 32px;
   block-size: 10px;
   background-image: url("../../img/arrow.svg");
-  background-size: 24px 12px;
+  background-size: 32px 12px;
   background-repeat: no-repeat;
 }
 .programs__button:hover::after {
@@ -1320,7 +1322,7 @@ img {
 
 .page-footer__logo {
   position: relative;
-  margin-block: 39px 32px;
+  margin-block: 39px 29px;
   text-align: center;
 }
 @media (max-width: 767px) {
@@ -1328,7 +1330,7 @@ img {
     position: absolute;
     content: "";
     left: 0;
-    bottom: -32px;
+    bottom: -29px;
     inline-size: 100%;
     block-size: 2px;
     background-color: #D9D9D9;
@@ -1349,7 +1351,7 @@ img {
 
 .page-footer__list {
   position: relative;
-  margin-block: 20px 21px;
+  margin-block: 20px 17px;
   padding: 0;
   text-align: center;
   list-style-type: none;
@@ -1359,7 +1361,7 @@ img {
     position: absolute;
     content: "";
     left: 0;
-    bottom: -21px;
+    bottom: -17px;
     inline-size: 100%;
     block-size: 2px;
     background-color: #D9D9D9;
@@ -1402,12 +1404,13 @@ img {
 
 .social {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 39px;
+  padding-inline: 73px 81px;
 }
 @media (min-width: 768px) {
   .social {
+    justify-content: center;
     gap: 14px;
   }
 }

@@ -109,7 +109,9 @@
 }
 
 .promo__img {
+  display: block;
   inline-size: 280px;
+  margin-block-end: 3px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -130,7 +132,7 @@
 
 .promo__button {
   inline-size: 280px;
-  block-size: 40px;
+  block-size: 40px;  
   
   @media (min-width: $tablet-width) {
     inline-size: 244px;

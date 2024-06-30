@@ -16,7 +16,7 @@
 
 .page-footer__logo {
   position: relative;
-  margin-block: 39px 32px;
+  margin-block: 39px 29px;
   text-align: center;
 
   @media (max-width: $mobile-width-only) {
@@ -24,7 +24,7 @@
     position: absolute;
     content: "";
     left: 0;
-    bottom: -32px;
+    bottom: -29px;
     inline-size: 100%;
     block-size: 2px;
     background-color: #D9D9D9;
@@ -47,7 +47,7 @@
 
 .page-footer__list {
   position: relative;  
-  margin-block: 20px 21px;
+  margin-block: 20px 17px;
   padding: 0;
   text-align: center;
   list-style-type: none;
@@ -57,7 +57,7 @@
     position: absolute;
     content: "";
     left: 0;
-    bottom: -21px;
+    bottom: -17px;
     inline-size: 100%;
     block-size: 2px;
     background-color: #D9D9D9;
