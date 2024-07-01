@@ -54,12 +54,13 @@
 }
 
 .contacts__adress {
-  display: flex;
+  display: flex; 
   flex-direction: column;
+  margin-inline-end: 5px;
 
   @media (min-width: $tablet-width) {
     gap: 21px;
-    margin-block-start: 4px;
+    margin: 0;
   }
 }
 

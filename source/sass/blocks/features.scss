@@ -6,7 +6,7 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    margin-block: 45px 32px;
+    margin-block: 45px 33px;
     font-size: 60px;
     line-height: 1;
   }
@@ -27,6 +27,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
     row-gap: 37px;
     margin-block-end: 0;
     padding-block-end: 47px;
@@ -63,7 +64,7 @@
   counter-increment: cnt 1;
 
   @media (min-width: $tablet-width) {
-    padding-inline-start: 0;
+    padding-inline-start: 0;    
     padding-block: 151px 57px;
     background-size: 80px 80px;
     background-position: left top 40px;
@@ -74,7 +75,7 @@
       position: absolute;
       content: counter(cnt);
       top: 0;
-      left: 118px;
+      left: 113px;
       z-index: -1;
       font-family: $font-title;
       font-size: 280px;

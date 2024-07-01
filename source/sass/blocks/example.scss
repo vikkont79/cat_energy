@@ -61,6 +61,14 @@
   }
 }
 
+.example__text br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
 .example__stats {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -235,6 +243,6 @@
   margin-inline: auto;
 
   @media (min-width: $tablet-width) {
-    margin-block-end: 55px;
+    margin-block-end: 15px;
   }
 }

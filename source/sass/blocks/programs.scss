@@ -8,6 +8,7 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     gap: 30px;
   }
 
@@ -25,7 +26,7 @@
 
   @media (min-width: $tablet-width) {
     padding-inline-start: 52px;
-    padding-block-end: 53px;
+    padding-block-end: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,7 +74,7 @@
     &::before {
       top: 15px;
       left: auto;
-      right: 62px;
+      right: 42px;
       inline-size: 200px;
       block-size: 200px;
       border-radius: 200px;
@@ -106,7 +107,7 @@
   @media (min-width: $tablet-width) {
     top: 4px;
     left: auto;
-    right: 92px;
+    right: 72px;
     inline-size: 140px;
     block-size: 194px;
   }
@@ -130,7 +131,7 @@
   @media (min-width: $tablet-width) {
     top: 58px;
     left: auto;
-    right: 28px;
+    right: 8px;
     inline-size: 268px;
     block-size: 112px;
   }
@@ -158,19 +159,27 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-block-end: 48px;
-    padding-inline-end: 316px;
+    margin-block-end: 50px;
+    padding-inline-end: 290px;
     font-size: 16px;
     line-height: 24px;
 
     &::before {
       display: none;
     }
-  }
+  }  
 
   @media (min-width: $desktop-width) {
     margin-block-end: 23px;
     padding-inline-end: 0;
+  }
+}
+
+.programs__description br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
@@ -188,6 +197,14 @@
   text-decoration: none;
   color: inherit;
 
+  @media (min-width: $tablet-width) {
+    inline-size: 165px;
+    block-size: 38px;
+    padding-inline-end: 57px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &::after {
     position: absolute;
     top: 11px;
@@ -198,6 +215,10 @@
     background-image: url("../../img/arrow.svg");
     background-size: 32px 12px;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 15px;
+    }
   }
 
   &:hover {
@@ -209,14 +230,5 @@
 
   &:active {
     opacity: 0.3;
-  }
-
-
-
-  @media (min-width: $tablet-width) {
-    inline-size: 165px;
-    block-size: 38px;
-    font-size: 20px;
-    line-height: 30px;
   }
 }

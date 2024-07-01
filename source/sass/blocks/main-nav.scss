@@ -13,7 +13,7 @@
     inline-size: 440px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding-block-start: 18px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -57,7 +57,7 @@
       &::before {
         position: absolute;
         content: "";
-        bottom: -10px;
+        bottom: 0;
         inline-size: 100%;
         block-size: 2px;
         background-color: $basic_green;
@@ -82,7 +82,7 @@
     &::before {
       position: absolute;
       content: "";
-      bottom: -10px;
+      bottom: 0;
       inline-size: 100%;
       block-size: 2px;
       background-color: $basic_green;
