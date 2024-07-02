@@ -1,6 +1,6 @@
 .show-more {
   padding-inline: 20px;
-  padding-block: 25px;
+  padding-block: 24px;
   border-top: 2px #EBEBEB solid;
   border-bottom: 2px #EBEBEB solid;
   text-align: center;
@@ -85,6 +85,10 @@
 
   @media (min-width: $desktop-width) {
     inline-size: 169px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-inline-start: 18px;
   }
 
   &:hover,

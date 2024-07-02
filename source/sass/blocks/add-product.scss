@@ -1,5 +1,5 @@
 .add-product {
-  padding-block: 13px 19px;
+  padding-block: 13px 18px;
   border-top: 1px $special_grey solid;
 
   @media (min-width: $tablet-width) {
@@ -73,6 +73,8 @@
 .add-product__button {
   inline-size: 280px;
   block-size: 40px;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     inline-size: 632px;

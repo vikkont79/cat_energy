@@ -1568,13 +1568,13 @@ img {
   .main-catalog__list {
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
-    row-gap: 63px;
+    row-gap: 60px;
   }
 }
 
 .product {
   padding-inline: 20px;
-  padding-block: 8px 11px;
+  padding-block: 8px 10px;
   border-top: 2px #EBEBEB solid;
 }
 @media (min-width: 768px) {
@@ -1595,12 +1595,12 @@ img {
 
 .product__info {
   display: flex;
-  margin-block: 11px 13px;
+  margin-block: 11px 12px;
 }
 @media (min-width: 768px) {
   .product__info {
     flex-direction: column;
-    margin-block: 0 33px;
+    margin-block: 0 30px;
   }
 }
 
@@ -1675,7 +1675,7 @@ img {
 }
 
 .product__title {
-  margin-block: 0 18px;
+  margin-block: 0 16px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -1718,7 +1718,7 @@ img {
 @media (min-width: 768px) {
   .product__item {
     position: relative;
-    margin-block-end: 14px;
+    margin-block-end: 15px;
   }
   .product__item::after {
     position: absolute;
@@ -1734,6 +1734,8 @@ img {
   inline-size: 280px;
   block-size: 40px;
   margin-block-end: 14px;
+  font-size: 16px;
+  line-height: 20px;
 }
 @media (min-width: 768px) {
   .product__button {
@@ -1744,12 +1746,13 @@ img {
 @media (min-width: 1440px) {
   .product__button {
     inline-size: 168px;
+    margin-inline-start: 3px;
   }
 }
 
 .show-more {
   padding-inline: 20px;
-  padding-block: 25px;
+  padding-block: 24px;
   border-top: 2px #EBEBEB solid;
   border-bottom: 2px #EBEBEB solid;
   text-align: center;
@@ -1840,6 +1843,11 @@ img {
     inline-size: 169px;
   }
 }
+@media (min-width: 1440px) {
+  .show-more__button {
+    margin-inline-start: 18px;
+  }
+}
 .show-more__button:hover, .show-more__button:active {
   background-color: #EBEBEB;
 }
@@ -1862,7 +1870,7 @@ img {
 }
 
 .add-catalog__title {
-  margin-block: 0 36px;
+  margin-block: 0 34px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 1;
@@ -1944,7 +1952,7 @@ img {
 }
 
 .add-product {
-  padding-block: 13px 19px;
+  padding-block: 13px 18px;
   border-top: 1px #CDCDCD solid;
 }
 @media (min-width: 768px) {
@@ -2025,6 +2033,8 @@ img {
 .add-product__button {
   inline-size: 280px;
   block-size: 40px;
+  font-size: 16px;
+  line-height: 20px;
 }
 @media (min-width: 768px) {
   .add-product__button {
