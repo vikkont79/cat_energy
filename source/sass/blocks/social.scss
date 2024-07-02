@@ -1,16 +1,35 @@
 .social {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-inline: 73px 81px; 
+  padding-inline: 73px 81px;
 
   @media (min-width: $tablet-width) {
-    justify-content: center;
-    padding: 0;
-    gap: 14px;
+    align-items: center;
+    padding-inline-start: 110px;
+    gap: 25px;
   }
 }
 
+.social__link--vkontakte .social__icon {
+  @media (min-width: $tablet-width) {
+    inline-size: 30px;
+    block-size: 22px;
+  }
+}
+
+.social__link--instagram .social__icon {
+  @media (min-width: $tablet-width) {
+    inline-size: 23px;
+    block-size: 23px;
+  }
+}
+
+.social__link--facebook .social__icon {
+  @media (min-width: $tablet-width) {
+    inline-size: 28px;
+    block-size: 33px;
+  }
+}
 
 .social__icon {
   fill: #666666;

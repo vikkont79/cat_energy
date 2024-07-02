@@ -4,24 +4,26 @@
 
   @media (min-width: $tablet-width) {
     padding-block-start: 43px;
+    padding-block-end: 54px;
     background-image: linear-gradient(to top, #EAEAEA 462px, #FFFFFF 462px);
   }
 
   @media (min-width: $desktop-width) {
-    padding-block: 0 75px;
+    padding-block: 0 65px;
   }
 }
 
 .example__wrapper { 
   @media (min-width: $desktop-width) {    
     display: grid;
-    grid-template-columns: 1fr 1fr;    
+    grid-template-columns: 1fr 1fr;  
+    gap: 35px;  
   }
 }
 
 .example__info {
-  @media (min-width: $desktop-width) {
-    inline-size: 436px;
+  @media (min-width: $desktop-width) {  
+    inline-size: 436px;  
     display: flex;
     flex-direction: column;
   }
@@ -67,16 +69,21 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .example__stats {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    margin-inline-end: 70px;
   }
 }
 
@@ -165,6 +172,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-block-start: 11px;
     text-align: right;
     font-size: 20px;
@@ -172,35 +182,34 @@
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 63px;
     margin-block: 0;
     text-align: left;
   }
 }
 
-.example__cost br {
-  display: none;
 
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
 
 .example__picture {
   @media (min-width: $tablet-width) {    
     padding-inline: 59px 57px;
   } 
+
+  @media (min-width: $desktop-width) {
+   margin: 0;   
+   padding: 0;
+  }
 }
 
 .example__history {
-   margin-block-end: 15px;
-
-  @media (min-width: $tablet-width) {
+   margin-block-end: 15px; 
+   
+   @media (min-width: $tablet-width) {
     margin-block-end: 25px;
   }
+
+  
 }
 
 .example__images {
@@ -243,6 +252,11 @@
   margin-inline: auto;
 
   @media (min-width: $tablet-width) {
-    margin-block-end: 15px;
+   padding-inline-start: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-inline-start: 10px;
   }
 }
+

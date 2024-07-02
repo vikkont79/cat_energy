@@ -10,6 +10,10 @@
     font-size: 60px;
     line-height: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-block: 80px 30px;
+  }
 }
 
 .features__list {
@@ -46,8 +50,9 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    padding-block-end: 26px;  
-    
+    column-gap: 80px;
+    padding-block-end: 26px;
+
     &::after {
       display: none;
     }
@@ -64,7 +69,7 @@
   counter-increment: cnt 1;
 
   @media (min-width: $tablet-width) {
-    padding-inline-start: 0;    
+    padding-inline-start: 0;
     padding-block: 151px 57px;
     background-size: 80px 80px;
     background-position: left top 40px;
@@ -99,6 +104,14 @@
 
 .features__item--weight {
   background-image: url("../../img/weight.svg");
+
+  @media (min-width: $tablet-width) {
+    padding-inline-end: 20px;
+  }  
+
+  @media (min-width: $desktop-width) {
+    padding-inline-end: 0;
+  }
 }
 
 .features__item--weight br {

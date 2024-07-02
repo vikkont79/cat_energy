@@ -30,8 +30,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    inline-size: 570px;
-    padding-inline: 52px;
+    inline-size: 570px;  
+    padding-inline: 50px;  
     padding-block-end: 55px;
   }
 }
@@ -86,7 +86,7 @@
     padding-inline: 162px 0;
 
     &::before {
-      top: -30px;
+      top: -28px;
       left: 0;
       right: 62px;
       inline-size: 100px;
@@ -137,7 +137,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -4px;
+    top: -8px;
     left: -19px;
     inline-size: 134px;
     block-size: 56px;
@@ -145,7 +145,7 @@
 }
 
 .programs__description {
-  position: relative;
+  position: relative;  
   margin-block-end: 41px;
   color: $special_dark_grey;
 
@@ -167,10 +167,10 @@
     &::before {
       display: none;
     }
-  }  
+  }
 
   @media (min-width: $desktop-width) {
-    margin-block-end: 23px;
+    margin-block-end: 26px;
     padding-inline-end: 0;
   }
 }
@@ -180,6 +180,10 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 

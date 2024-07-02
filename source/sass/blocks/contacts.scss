@@ -75,6 +75,10 @@
     line-height: 20px;
   }
 
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+
 }
 
 .contacts__map {

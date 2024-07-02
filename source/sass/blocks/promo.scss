@@ -36,7 +36,7 @@
     &::before{
       position: absolute;
       content: "";      
-      top: -95px;
+      top: -112px;
       bottom: 0;
       left: 50%;
       right: 0;
@@ -55,7 +55,7 @@
       position: absolute;
       content: "";
       inset: 0;
-      top: -95px;
+      top: -112px;
       left: 50%;
       background-color: $basic_green;
       opacity: 0.85;
@@ -123,7 +123,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 32px;
+    top: 2px;
     left: calc(50% - 162px);
     inline-size: 552px;
     block-size: 499px;
