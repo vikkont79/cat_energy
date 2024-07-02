@@ -38,9 +38,31 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-inline-start: 20px;
+  }
+}
+
+.field__input--email,
+.field__input--phone {
+  padding-inline-start: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-inline-start: 20px;
+  }
 }
 
 .field__input--comment {
   inline-size: 100%;
+  padding-inline-start: 0;
+  padding-block-start: 6px;
   text-align: left;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  line-height: 30px;
+  }
 }

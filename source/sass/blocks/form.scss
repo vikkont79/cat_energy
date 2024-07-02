@@ -22,7 +22,7 @@
 }
 
 .form__group--pet {
-  padding-block-end: 11px;
+  padding-block-end: 10px;
   border-bottom: 1px #D9D9D9 solid;
 
   @media (min-width: $tablet-width) {
@@ -33,7 +33,7 @@
 
 .form__group--program {
   margin-block-end: 26px;
-  padding-block-end: 6px;
+  padding-block-end: 0;
   border-bottom: 1px #D9D9D9 solid;
 
   @media (min-width: $tablet-width) {
@@ -62,7 +62,7 @@
   padding-block-end: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-block-end: 65px;
+    padding-block-end: 0;
   }
 }
 
@@ -93,6 +93,10 @@
     font-size: 36px;
     line-height: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-block-end: 72px;
+  }
 }
 
 .form__list {
@@ -121,18 +125,18 @@
 }
 
 .form__item {
-  margin-block-end: 13px;
+  margin-block-end: 12px;
 }
 
 .form__submit {
-  padding-block: 13px 32px;
+  padding-block: 16px 32px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 282px 282px;
     gap: 60px;
-    margin-block: 20px 19px;
+    margin-block: 16px 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -146,10 +150,16 @@
   inline-size: 280px;
   block-size: 40px;
   margin-block-end: 21px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    block-size: 52px;
+    font-size: 20px;
+  }
 
   @media (min-width: $desktop-width) {
-    inline-size: 568px;
-    block-size: 52px;
+    inline-size: 568px;    
   }
 }
 
