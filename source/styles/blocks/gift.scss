@@ -2,32 +2,32 @@
   position: relative;
   margin-block: 35px;
   background-color: $basic_green;
-  background-image: url("../../img/gift-mobile.jpg");
+  background-image: url("../../images/gift-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 280px auto;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/gift-mobile@2x.jpg");
+    background-image: url("../../images/gift-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
     margin-block: 69px 76px;
-    background-image: url("../../img/gift-tablet.jpg");
+    background-image: url("../../images/gift-tablet@1x.jpg");
     background-size: 708px auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/gift-tablet@2x.jpg");
+      background-image: url("../../images/gift-tablet@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
     margin-block: 0;
-    background-image: url("../../img/gift-desktop.jpg");
+    background-image: url("../../images/gift-desktop@1x.jpg");
     background-size: 245px auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/gift-desktop@2x.jpg");
+      background-image: url("../../images/gift-desktop@2x.jpg");
     }
   }
 

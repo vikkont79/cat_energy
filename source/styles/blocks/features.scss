@@ -91,19 +91,19 @@
 }
 
 .features__item--leaf {
-  background-image: url("../../img/leaf.svg");
+  background-image: url("../../images/leaf.svg");
 }
 
 .features__item--powder {
-  background-image: url("../../img/powder.svg");
+  background-image: url("../../images/powder.svg");
 }
 
 .features__item--meal {
-  background-image: url("../../img/meal.svg");
+  background-image: url("../../images/meal.svg");
 }
 
 .features__item--weight {
-  background-image: url("../../img/weight.svg");
+  background-image: url("../../images/weight.svg");
 
   @media (min-width: $tablet-width) {
     padding-inline-end: 20px;

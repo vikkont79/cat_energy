@@ -101,7 +101,7 @@
   left: 9px;
   inline-size: 36px;
   block-size: 50px;
-  background-image: url(../../img/cat-slim.svg);
+  background-image: url(../../images/cat-slim.svg);
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -125,7 +125,7 @@
   left: -7px;
   inline-size: 67px;
   block-size: 28px;
-  background-image: url(../../img/cat-pro.svg);
+  background-image: url(../../images/cat-pro.svg);
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -216,7 +216,7 @@
     content: "";
     inline-size: 32px;
     block-size: 10px;
-    background-image: url("../../img/arrow.svg");
+    background-image: url("../../images/arrow.svg");
     background-size: 32px 12px;
     background-repeat: no-repeat;
 
@@ -227,7 +227,7 @@
 
   &:hover {
     &::after {
-      background-image: url(../../img/arrow-hover.svg);
+      background-image: url(../../images/arrow-hover.svg);
       background-size: 32px 12px;
     }
   }
