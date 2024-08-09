@@ -4,7 +4,7 @@
   "description": "Личный проект «{{cat_energy}}» от HTML Academy",
   "type": "module",
   "engines": {
-    "node": "^18.18 || ^20.10"
+    "node": "^18.18 || ^20.9"
   },
   "browserslist": [
     "last 2 versions",
