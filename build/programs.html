@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cat_energy_Ltd</title>
+  <link rel="stylesheet" href="styles/style.css">  
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <nav class="page-header__nav page-header__nav--opened">
+      <div class="page-header__bar">
+        <div class="page-header__logo">
+          <a class="logo" href="index.html">
+            <picture>
+              <source media="(min-width:  1440px)" srcset="images/logo-desktop.svg" width="202" height="59">
+              <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174" height="52">
+              <img class="logo__img" src="images/logo-mobile.svg" width="34" height="38" alt="Логотип Cat Energy">
+            </picture>
+          </a>
+          <a class="footer-logo" href="index.html">
+            <svg class="footer-logo__icon" width="101" height="18">
+              <use xlink:href="icons/stack.svg#footer-logo"></use>
+            </svg>
+          </a>
+        </div>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+      <ul class="page-header__menu main-nav">
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link" href="index.html">главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="programs.html">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-index">
+    <h1 class="main-index__title application__wrapper wrapper">Подбор программы</h1>
+    <section class="application">
+      <div class="application__wrapper wrapper">
+        <h2 class="visually-hidden">Форма для выбора параметров программы</h2>
+        <p class="application__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+        <form class="application__form form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <fieldset class="form__group form__group--pet">
+            <legend class="visually-hidden">Данные питомца</legend>
+            <p class="form__item field">
+              <label class="field__label" for="application-name">ИМЯ:*</label>
+              <input class="field__input" type="text" name="application-name" id="application-name" placeholder="барсик">
+            </p>
+            <p class="form__item field">
+              <label class="field__label" for="application-weight">Вес (кг):*</label>
+              <input class="field__input" type="text" name="application-weight" id="application-weight" placeholder="7">
+            </p>
+            <p class="form__item field">
+              <label class="field__label" for="application-age">Возраст (лет):</label>
+              <input class="field__input" type="text" name="application-agee" id="application-age" placeholder="7">
+            </p>
+          </fieldset>
+          <fieldset class="form__group form__group--program">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="control">
+                  <input class="control__input visually-hidden" type="radio" name="program" value="slim" checked="checked">
+                  <span class="control__mark"></span>
+                  <span class="control__label">похудение</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="control">
+                  <input class="control__input visually-hidden" type="radio" name="program" value="mass">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Набор массы</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="control">
+                  <input class="control__input visually-hidden" type="radio" name="program" value="none">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__group form__group--contacts">
+            <legend class="form__title">Контактные данные (владельца кота)</legend>
+            <p class="form__item field">
+              <label class="field__label" for="application-email">E-mail:*</label>
+              <input class="field__input field__input--email" type="email" name="application-email" id="application-email" placeholder="kuklachev@gmail.com">
+            </p>
+            <p class="form__item field">
+              <label class="field__label" for="application-phone">Телефон:*</label>
+              <input class="field__input field__input--phone" type="tel" name="application-phone" id="application-phone" placeholder="8 (960) 900-60-90">
+            </p>
+          </fieldset>
+          <div class="form__group form__group--comment">
+            <label class="form__title" for="application-comment">Комментарий</label>
+            <div class="field">
+              <textarea class="field__input field__input--comment" name="application-comment" id="application-comment" rows="7">
+                расскажите обо всех повадках кота
+              </textarea>
+            </div>
+          </div>
+          <fieldset class="form__group form__group--more">
+            <legend class="form__title">Дополнительно</legend>
+            <ul class="form__list form__list--more">
+              <li class="form__item">
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="sugar" checked="checked">
+                  <span class="control__mark"></span>
+                  <span class="control__label">сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="water">
+                  <span class="control__mark"></span>
+                  <span class="control__label">питьевая вода</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="milk">
+                  <span class="control__mark"></span>
+                  <span class="control__label">молоко</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="control">
+                  <input class="control__input visually-hidden" type="checkbox" name="vitamin">
+                  <span class="control__mark"></span>
+                  <span class="control__label">витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form__submit">
+            <button class="form__button button" type="submit">отправить заявку</button>
+            <p class="form__add">* - обязательные поля</p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__wrapper">
+        <p class="contacts__title">приглашаем<br>к сотрудничеству<br>дилеров!</p>
+        <div class="contacts__adress">
+          <address class="contacts__text">ул. Большая<br>Конюшенная, д. 19/8</address>
+          <address class="contacts__text">Санкт-Петербург</address>
+        </div>
+      </div>
+      <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad224644410c55b2ed14431db75f96f5f9b20f7bae6f613c488ede772f53925b8&amp;source=constructor">
+      </iframe>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper wrapper">
+      <a class="page-footer__logo footer-logo">
+        <svg class="footer-logo__icon" width="128" height="24">
+          <use xlink:href="icons/stack.svg#footer-logo"></use>
+        </svg>
+      </a>
+      <ul class="page-footer__list social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <svg class="social__icon" width="23" height="13">
+              <use xlink:href="icons/stack.svg#vk-icon"></use>
+            </svg>
+            <span class="visually-hidden">Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <svg class="social__icon" width="16" height="16">
+              <use xlink:href="icons/stack.svg#inst-icon"></use>
+            </svg>
+            <span class="visually-hidden">Мы в Инстаграме</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <svg class="social__icon" width="13" height="20">
+              <use xlink:href="icons/stack.svg#fb-icon"></use>
+            </svg>
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+          </a>
+        </li>
+      </ul>
+      <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">Разработано в </span>HTML Academy
+        <svg class="page-footer__icon" width="27" height="34">
+          <use xlink:href="icons/stack.svg#html-academy"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    var navMain = document.querySelector('.page-header__nav');
+    var navToggle = document.querySelector('.page-header__toggle');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('page-header__nav--closed')) {
+        navMain.classList.remove('page-header__nav--closed');
+        navMain.classList.add('page-header__nav--opened');
+      } else {
+        navMain.classList.add('page-header__nav--closed');
+        navMain.classList.remove('page-header__nav--opened');
+      }
+    });
+  </script>
+
+</body>
+
+</html>

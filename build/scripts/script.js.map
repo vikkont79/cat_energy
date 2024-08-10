@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["source/scripts/script.js"],
+  "sourcesContent": ["var navMain = document.querySelector('.page-header__nav');\r\nvar navToggle = document.querySelector('.page-header__toggle');\r\n\r\n    navToggle.addEventListener('click', function () {\r\n      if (navMain.classList.contains('page-header__nav--closed')) {\r\n        navMain.classList.remove('page-header__nav--closed');\r\n        navMain.classList.add('page-header__nav--opened');\r\n      } else {\r\n        navMain.classList.add('page-header__nav--closed');\r\n        navMain.classList.remove('page-header__nav--opened');\r\n      }\r\n    });"],
+  "mappings": ";AAAA,IAAI,UAAU,SAAS,cAAc,mBAAmB;AACxD,IAAI,YAAY,SAAS,cAAc,sBAAsB;AAEzD,UAAU,iBAAiB,SAAS,WAAY;AAC9C,MAAI,QAAQ,UAAU,SAAS,0BAA0B,GAAG;AAC1D,YAAQ,UAAU,OAAO,0BAA0B;AACnD,YAAQ,UAAU,IAAI,0BAA0B;AAAA,EAClD,OAAO;AACL,YAAQ,UAAU,IAAI,0BAA0B;AAChD,YAAQ,UAAU,OAAO,0BAA0B;AAAA,EACrD;AACF,CAAC;",
+  "names": []
+}
