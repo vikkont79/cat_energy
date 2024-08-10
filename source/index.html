@@ -5,22 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat_energy_Ltd</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    html {
-      background-image: url("img/pixel-glass/mobile-bg.png");
-      background-repeat: no-repeat;
-      background-position: 50% 0;
-
-      @media (min-width: 768px) {
-        background-image: url("img/pixel-glass/tablet-bg.png");
-      }
-
-      @media (min-width: 1220px) {
-        background-image: url("img/pixel-glass/desktop-bg.png");
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles/style.css">  
 </head>
 
 <body class="page__body">
@@ -30,14 +15,14 @@
         <div class="page-header__logo">
           <a class="logo" href="index.html">
             <picture>
-              <source media="(min-width:  1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
-              <img class="logo__img" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип Cat Energy">
+              <source media="(min-width:  1440px)" srcset="images/logo-desktop.svg" width="202" height="59">
+              <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174" height="52">
+              <img class="logo__img" src="images/logo-mobile.svg" width="34" height="38" alt="Логотип Cat Energy">
             </picture>
           </a>
           <a class="footer-logo" href="index.html">
             <svg class="footer-logo__icon" width="101" height="18">
-              <use xlink:href="img/sprite.svg#footer-logo"></use>
+              <use xlink:href="icons/stack.svg#footer-logo"></use>
             </svg>
           </a>
         </div>
@@ -45,13 +30,13 @@
       </div>
       <ul class="page-header__menu main-nav">
         <li class="main-nav__item main-nav__item--active">
-          <a class="main-nav__link" href="index.html">главная</a>
+          <a class="main-nav__link main-nav__link--index" href="index.html">главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">каталог продукции</a>
+          <a class="main-nav__link main-nav__link--index" href="catalog.html">каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="programs.html">подбор программы</a>
+          <a class="main-nav__link main-nav__link--index" href="programs.html">подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -63,9 +48,9 @@
         <h1 class="promo__title">Функциональное<br>питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <picture>
-          <source media="(min-width:  1440px)" srcset="img/index-can-desktop.png, img/index-can-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet.png, img/index-can-tablet@2x.png 2x">
-          <img class="promo__img" srcset="img/index-can-mobile@2x.png 2x" src="img/index-can-mobile.png" width="280"
+          <source media="(min-width:  1440px)" srcset="images/index-can-desktop@1x.png, images/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png, images/index-can-tablet@2x.png 2x">
+          <img class="promo__img" srcset="images/index-can-mobile@2x.png 2x" src="images/index-can-mobile@1x.png" width="280"
             height="270" alt="Банка кошкорма">
         </picture>
         <a class="promo__button button" href="programs.html">подобрать программу</a>
@@ -134,12 +119,12 @@
         <div class="example__picture">
           <div class="example__history">
             <div class="example__images">
-              <img class="example__img example__img--before example__img--current" src="img/cat-before-mobile.png"
-                srcset="img/cat-before-mobile@2x.png 2x" width="280" height="232" alt="Фото кота до похудения">
-              <img class="example__img example__img--after" src="img/cat-after-mobile.png"
-                srcset="img/cat-after-mobile@2x.png 2x" width="243" height="232" alt="Фото кота после похудения">
-              <img class="example__img example__img--duo" src="img/image_cat_tablet.png"
-                srcset="img/image_cat_tablet@2x.png 2x" width="591" height="511" alt="Совмещённое изображение котов">
+              <img class="example__img example__img--before example__img--current" src="images/cat-before-mobile@1x.png"
+                srcset="images/cat-before-mobile@2x.png 2x" width="280" height="232" alt="Фото кота до похудения">
+              <img class="example__img example__img--after" src="images/cat-after-mobile@1x.png"
+                srcset="images/cat-after-mobile@2x.png 2x" width="243" height="232" alt="Фото кота после похудения">
+              <img class="example__img example__img--duo" src="images/image_cat_tablet@1x.png"
+                srcset="images/image_cat_tablet@2x.png 2x" width="591" height="511" alt="Совмещённое изображение котов">
             </div>
           </div>
           <div class="example__switcher switcher">
@@ -173,14 +158,14 @@
     <div class="page-footer__wrapper wrapper">
       <a class="page-footer__logo footer-logo">
         <svg class="footer-logo__icon" width="128" height="24">
-          <use xlink:href="img/sprite.svg#footer-logo"></use>
+          <use xlink:href="icons/stack.svg#footer-logo"></use>
         </svg>
       </a>
       <ul class="page-footer__list social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <svg class="social__icon" width="23" height="13">
-              <use xlink:href="img/sprite.svg#vk-icon"></use>
+              <use xlink:href="icons/stack.svg#vk-icon"></use>
             </svg>
             <span class="visually-hidden">Мы в Вконтакте</span>
           </a>
@@ -188,7 +173,7 @@
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
             <svg class="social__icon" width="16" height="16">
-              <use xlink:href="img/sprite.svg#inst-icon"></use>
+              <use xlink:href="icons/stack.svg#inst-icon"></use>
             </svg>
             <span class="visually-hidden">Мы в Инстаграме</span>
           </a>
@@ -196,7 +181,7 @@
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
             <svg class="social__icon" width="13" height="20">
-              <use xlink:href="img/sprite.svg#fb-icon"></use>
+              <use xlink:href="icons/stack.svg#fb-icon"></use>
             </svg>
             <span class="visually-hidden">Мы в Фейсбуке</span>
           </a>
@@ -205,7 +190,7 @@
       <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Разработано в </span>HTML Academy
         <svg class="page-footer__icon" width="27" height="34">
-          <use xlink:href="img/sprite.svg#html-logo"></use>
+          <use xlink:href="icons/stack.svg#html-academy"></use>
         </svg>
       </a>
     </div>
@@ -251,459 +236,7 @@
       }
     });
   </script>
-
-  <script>
-    function pixelGlass() {
-
-      'use strict';
-
-      var doc = document;
-      var controlsPanel;
-      var bodyContentWrapper;
-      var panelClass = 'controls-panel';
-      var canBeDisabled = [];
-
-      var prefix = 'pg';
-      var filtersList = ['none', 'invert'];
-      var statesList = ['off', 'on'];
-
-      var currents = {
-        state: getCurrent('state', statesList[1]),
-        filter: getCurrent('filter', filtersList[0]),
-        opacity: getCurrent('opacity', 0.5)
-      };
-
-      var targets = {
-        state: {
-          elem: doc.documentElement,
-          attr: 'data'
-        },
-        filter: {
-          elem: doc.body,
-          attr: 'data'
-        },
-        opacity: {
-          elem: doc.body,
-          attr: 'style'
-        }
-      };
-
-      // States switcher params
-      var paramsStates = {
-        elemTag: 'button',
-        elemText: 'on',
-        listName: 'states',
-        itemName: 'state',
-        target: targets.state,
-        type: 'button',
-        list: statesList,
-        canDisableAll: true,
-        attrs: {
-          tabindex: 1,
-        }
-      };
-
-      // Filters switcher params
-      var paramsFilters = {
-        elemTag: 'button',
-        elemText: 'invert',
-        listName: 'filters',
-        itemName: 'filter',
-        target: targets.filter,
-        type: 'button',
-        list: filtersList,
-        attrs: {
-          tabindex: 2,
-        }
-      };
-
-      // Opacity range params
-      var paramsOpacity = {
-        itemName: 'opacity',
-        type: 'number',
-        target: targets.opacity,
-        setAttr: 'style',
-        attrs: {
-          min: 0,
-          max: 1,
-          step: 0.1,
-          tabindex: 3,
-        }
-      };
-
-      //---------------------------------------------
-
-      init();
-
-      //---------------------------------------------
-
-      function init() {
-        createContolsPanel();
-        applyCurrentData();
-
-        if (currents.state === 'on') {
-          applyCurrentStyles();
-        }
-      }
-
-      //---------------------------------------------
-
-      function createContolsPanel() {
-        var targetElem = doc.documentElement;
-
-        if (hasData(doc.body, 'has-sticky-point')) {
-          var stickyPoint = doc.querySelector('.sticky-point');
-
-          if (stickyPoint && !localStorage['pg-released']) {
-            targetElem = stickyPoint;
-          }
-          // Override defaults for demo page
-          currents.state = 'off';
-        }
-
-        controlsPanel = doc.createElement('div');
-        controlsPanel.classList.add(panelClass);
-        targetElem.appendChild(controlsPanel);
-        var sides = ['top', 'right', 'bottom', 'left'];
-
-        sides.forEach(function (item) {
-          var itemVal = getCurrent(item, '');
-          if (itemVal) {
-            controlsPanel.style[item] = itemVal;
-          }
-        });
-
-        initControls();
-      }
-
-      //---------------------------------------------
-
-      function initControls() {
-        createButton(paramsStates);
-        createButton(paramsFilters);
-        createInputNumber(paramsOpacity);
-
-        createDragButton();
-      }
-
-      //---------------------------------------------
-
-      function createButton(params) {
-        var listName = params.listName;
-        var itemName = params.itemName;
-        var elemTag = params.elemTag;
-        var elemText = params.elemText;
-        var type = params.type;
-        var list = params.list;
-        var action = params.action;
-        var currentVal = currents[itemName];
-        var attrs = params.attrs;
-        var currentNum = list.indexOf(currentVal);
-        var canDisableAll = params.canDisableAll;
-
-        var id = itemName;
-        var input = doc.createElement(elemTag);
-        setClasses(input, [
-          panelClass + '__control',
-          panelClass + '__control--' + type
-        ]);
-        input.setAttribute('type', type);
-        input.setAttribute('id', id);
-        setData(input, 'state-num', currentNum);
-
-        if (attrs) {
-          for (var attr in attrs) {
-            input.setAttribute(attr, attrs[attr]);
-          }
-        }
-
-        if (elemTag === 'button') {
-          input.innerHTML = elemText;
-        }
-
-        if (!canDisableAll) {
-          canBeDisabled.push(input);
-        }
-
-        controlsPanel.appendChild(input);
-
-        input.onclick = function () {
-          if (!params.target) {
-            return;
-          }
-
-          currentNum = +!currentNum;
-          currentVal = list[currentNum];
-
-          setData(input, 'state-num', currentNum);
-          setData(params.target.elem, itemName, currentVal);
-
-          saveLocalStorage(itemName, currentVal);
-
-          if (canDisableAll && canDisableAll === true) {
-            if (currentVal === 'off') {
-              removeCurrentStyles();
-              disableInputs();
-            }
-            else {
-              applyCurrentStyles();
-              enableInputs();
-            }
-          }
-        };
-      }
-
-      //---------------------------------------------
-
-      function createInputNumber(params) {
-        var itemName = params.itemName;
-        var attrs = params.attrs;
-        var type = params.type;
-        var setAttr = params.setAttr;
-        var canDisableAll = params.canDisableAll;
-
-        var id = itemName;
-        var input = doc.createElement('input');
-        setClasses(input, [
-          panelClass + '__control',
-          panelClass + '__control--' + type
-        ]);
-        input.setAttribute('type', type);
-        input.setAttribute('id', id);
-
-        for (var attr in attrs) {
-          input.setAttribute(attr, attrs[attr]);
-        }
-        input.setAttribute('value', currents[itemName]);
-
-        if (!canDisableAll) {
-          canBeDisabled.push(input);
-        }
-
-        controlsPanel.appendChild(input);
-
-        input.oninput = function () {
-          if (setAttr === 'style') {
-            params.target.elem.style[itemName] = this.value;
-            saveLocalStorage(itemName, this.value);
-          }
-        };
-      }
-
-      //---------------------------------------------
-
-      function createDragButton() {
-        var input = doc.createElement('button');
-        setClasses(input, [
-          panelClass + '__control',
-          panelClass + '__control--drag-n-drop'
-        ]);
-        input.setAttribute('type', 'button');
-        input.innerHTML = ' ';
-
-        controlsPanel.appendChild(input);
-
-        input.onmousedown = function () {
-          //Place it here to get real sizes after
-          // external styles has been loaded
-          var offsetTop = this.offsetTop;
-          var offsetLeft = controlsPanel.clientWidth - this.clientWidth;
-          var styles = getComputedStyle(controlsPanel);
-
-          controlsPanel.style.top = styles.top;
-          controlsPanel.style.left = styles.left;
-          controlsPanel.style.right = 'auto';
-          controlsPanel.style.bottom = 'auto';
-
-          doc.onmousemove = function (ev) {
-            var x = (ev.clientX - offsetLeft) + 'px';
-            var y = (ev.clientY) + 'px';
-
-            controlsPanel.style.left = x;
-            controlsPanel.style.top = y;
-          };
-        };
-
-        input.onmouseup = function () {
-          var styles = getComputedStyle(controlsPanel);
-          var left = +styles.left.replace(/px/, '');
-          var right = +styles.right.replace(/px/, '');
-          var top = +styles.top.replace(/px/, '');
-          var bottom = +styles.bottom.replace(/px/, '');
-
-          if (left > right) {
-            saveLocalStorage('left', 'auto');
-            saveLocalStorage('right', styles.right);
-
-            controlsPanel.style.right = styles.right;
-            controlsPanel.style.left = 'auto';
-          }
-          else {
-            saveLocalStorage('left', styles.left);
-            saveLocalStorage('right', 'auto'); //'auto' needs to override default position;
-          }
-          if (top > bottom) {
-            saveLocalStorage('top', 'auto');
-            saveLocalStorage('bottom', styles.bottom);
-
-            controlsPanel.style.bottom = styles.bottom;
-            controlsPanel.style.top = 'auto';
-          }
-          else {
-            saveLocalStorage('top', styles.top);
-            saveLocalStorage('bottom', 'auto');
-          }
-
-          doc.onmousemove = null;
-        };
-      }
-
-      //---------------------------------------------
-
-      function disableInputs() {
-        canBeDisabled.forEach(function (item) {
-          item.setAttribute('disabled', '');
-        });
-      }
-
-      //---------------------------------------------
-
-      function enableInputs() {
-        canBeDisabled.forEach(function (item) {
-          item.removeAttribute('disabled');
-        });
-      }
-
-      //---------------------------------------------
-
-      function getCurrent(name, defaultValue) {
-        var itemName = [prefix, name].join('-');
-        var localStorageVal = localStorage[itemName];
-        return localStorageVal ? localStorageVal : defaultValue;
-      }
-
-      //---------------------------------------------
-
-      function saveLocalStorage(name, value) {
-        var itemName = [prefix, name].join('-');
-        localStorage[itemName] = value;
-      }
-
-      //---------------------------------------------
-
-      // Not used
-      function getBodyOpacity() {
-        var opacityStr = getComputedStyle(doc.body).opacity;
-        return +opacityStr;
-      }
-
-      //---------------------------------------------
-
-      // Not used
-      function addExternalCSS() {
-        var styleElem = doc.createElement('style');
-        var cssLink = doc.createElement('link');
-        cssLink.setAttribute('rel', 'stylesheet');
-        cssLink.setAttribute('href', '../pixel-glass-js/styles.css');
-
-        doc.head.appendChild(cssLink);
-      }
-
-      //---------------------------------------------
-
-      function applyCurrentData() {
-        for (var key in targets) {
-          var target = targets[key];
-          var current = currents[key];
-
-          if (target.attr === 'data') {
-            setData(target.elem, key, current);
-          }
-        }
-
-        if (currents.state === 'off') {
-          disableInputs();
-        }
-      }
-      //---------------------------------------------
-
-      function applyCurrentStyles() {
-        for (var key in targets) {
-          var target = targets[key];
-          var current = currents[key];
-
-          if (target.attr === 'style') {
-            target.elem.style[key] = current;
-          }
-        }
-      }
-
-      //---------------------------------------------
-
-      function removeCurrentStyles() {
-        for (var key in targets) {
-          var target = targets[key];
-
-          if (target.attr === 'style') {
-            target.elem.style[key] = '';
-          }
-        }
-      }
-
-      //---------------------------------------------
-
-      // Made for IE10, it doesn't support dataset
-
-      function hasData(elem, dataName) {
-        if (!elem) {
-          return false;
-        }
-
-        dataName = 'data-' + dataName;
-
-        if (elem.getAttribute(dataName) !== undefined && elem.getAttribute(dataName) !== null) {
-          return true;
-        }
-
-        return false;
-      }
-
-      //---------------------------------------------
-
-      function setData(elem, dataName, dataVal) {
-        if (!elem) {
-          return;
-        }
-
-        dataName = 'data-' + dataName;
-        elem.setAttribute(dataName, dataVal);
-      }
-
-      //---------------------------------------------
-
-      // Made for IE10, it doesn't support
-      // multiply classes for classList.add
-
-      function setClasses(elem, classes) {
-        if (!elem) {
-          return;
-        }
-
-        if (classes.length > 0) {
-          classes.forEach(function (className) {
-            elem.classList.add(className);
-          });
-        }
-      }
-
-      //---------------------------------------------
-    }
-
-    window.onload = function () {
-      pixelGlass();
-    };
-  </script>
-
+  
 </body>
 
 </html>

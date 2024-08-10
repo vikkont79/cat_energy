@@ -1,0 +1,238 @@
+.programs__list {
+  margin: 0;
+  padding: 0;
+  padding-block-start: 20px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
+.programs__item {
+  background-color: $basic_grey;
+  border: 0px #D9D9D9 solid;
+  padding-inline: 20px;
+  padding-block-end: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-inline-start: 52px;
+    padding-block-end: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    inline-size: 570px;  
+    padding-inline: 50px;  
+    padding-block-end: 55px;
+  }
+}
+
+.programs__title {
+  position: relative;
+  margin: 0;
+  margin-block: 30px 29px;
+
+  padding-inline-start: 71px;
+  font-family: $font-title;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 2px;
+    top: -6px;
+    inline-size: 50px;
+    block-size: 50px;
+    border-radius: 50px;
+    background-color: $basic_green;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-size: contain;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-block: 77px 24px;
+    padding-inline: 0 229px;
+    font-size: 36px;
+    line-height: 1;
+
+    &::before {
+      top: 15px;
+      left: auto;
+      right: 42px;
+      inline-size: 200px;
+      block-size: 200px;
+      border-radius: 200px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-block-end: 73px;
+    padding-inline: 162px 0;
+
+    &::before {
+      top: -28px;
+      left: 0;
+      right: 62px;
+      inline-size: 100px;
+      block-size: 100px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.programs__item--slim .programs__title::after {
+  top: -9px;
+  left: 9px;
+  inline-size: 36px;
+  block-size: 50px;
+  background-image: url(../../images/cat-slim.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 4px;
+    left: auto;
+    right: 72px;
+    inline-size: 140px;
+    block-size: 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -36px;
+    left: 15px;
+    inline-size: 70px;
+    block-size: 97px;
+  }
+}
+
+.programs__item--mass .programs__title::after {
+  bottom: 4px;
+  left: -7px;
+  inline-size: 67px;
+  block-size: 28px;
+  background-image: url(../../images/cat-pro.svg);
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 58px;
+    left: auto;
+    right: 8px;
+    inline-size: 268px;
+    block-size: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -8px;
+    left: -19px;
+    inline-size: 134px;
+    block-size: 56px;
+  }
+}
+
+.programs__description {
+  position: relative;  
+  margin-block-end: 41px;
+  color: $special_dark_grey;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -23px;
+    inline-size: 240px;
+    block-size: 2px;
+    background-color: #D9D9D9;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-block-end: 50px;
+    padding-inline-end: 290px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-block-end: 26px;
+    padding-inline-end: 0;
+  }
+}
+
+.programs__description br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.programs__button {
+  position: relative;
+  inline-size: 134px;
+  block-size: 24px;
+  padding-inline-end: 47px;
+  padding-block: 4px;
+  font-family: $font-title;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+
+  @media (min-width: $tablet-width) {
+    inline-size: 165px;
+    block-size: 38px;
+    padding-inline-end: 57px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 11px;
+    right: 0;
+    content: "";
+    inline-size: 32px;
+    block-size: 10px;
+    background-image: url("../../images/arrow.svg");
+    background-size: 32px 12px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 15px;
+    }
+  }
+
+  &:hover {
+    &::after {
+      background-image: url(../../images/arrow-hover.svg);
+      background-size: 32px 12px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
